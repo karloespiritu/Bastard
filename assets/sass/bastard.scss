@@ -1,0 +1,34 @@
+// Bastard v1.0.0 - Sass Stylesheet
+// Author: Karlo Espiritu
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+    0.  Global Variables
+    1.  Icons
+    2.  General
+    3.  Utilities
+    4.  Navigation
+    5.  General
+    6.  Single Post
+    7.  Tag Archive
+    8.  Third Party Elements
+    9.  Pagination
+    10. Footer
+    11. Social
+ */
+
+@import "partials/variables";
+@import "partials/icons";
+@import "partials/elements";
+@import "partials/utilities";
+@import "partials/navigation";
+@import "partials/general";
+@import "partials/singlepost";
+@import "partials/tagarchive";
+@import "partials/thirdparty";
+@import "partials/pagination";
+@import "partials/footer";
+@import "partials/social";

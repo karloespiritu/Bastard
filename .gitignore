@@ -1,0 +1,5 @@
+.node_modules
+assets/bower_components
+.sass-cache
+.DS_Store
+image_sources

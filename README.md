@@ -2,7 +2,7 @@ Bastard Theme for Ghost
 ==================
 
 
-*A free Boilerplate responsive dark theme for [Ghost](https://ghost.org) blogging platform.
+A free Boilerplate responsive dark theme for [Ghost](https://ghost.org) blogging platform.
 
 Bastard theme uses Bootstrap Sass and Font Awesome for styling. The theme uses Grunt to manage tasks for compiling and minifying the theme components. It also use Bower to manage dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
 
