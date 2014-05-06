@@ -2,11 +2,15 @@ Bastard Theme for Ghost
 ==================
 
 
-A free Boilerplate responsive dark theme for [Ghost](https://ghost.org) blogging platform.
+A free boilerplate responsive dark theme for [Ghost](https://ghost.org) blogging platform.
 
 Bastard theme uses Bootstrap Sass and Font Awesome for styling. The theme uses Grunt to manage tasks for compiling and minifying the theme components. It also use Bower to manage dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
 
 ![Bastard](http://github.com/karloespiritu/Bastard)
+
+## Demo
+I'm using this theme for my personal website, [karloespiritu.com](http://karloespiritu.com)
+
 
 ## Setup
 
@@ -18,6 +22,20 @@ Bastard Theme uses Grunt to lint, compile and concat the assets. Customize the t
 * Start Ghost by running `npm start` on http://localhost:2368
 * Run `grunt watch` to start watching for file changes
 
+## Features
+
+* Full screen cover 
+* Full Responsive Layout
+* Developed using SASS
+* Syntax highlighting using Highlight.js
+* One file css/js for performance optimization
+
+The default page of Bastard theme uses a full screen cover image
+
+**Bootstrap SASS**
+
+
+**Font Awesome**
 
 
 ### Resources/Dependencies
