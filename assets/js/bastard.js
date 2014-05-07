@@ -13,7 +13,7 @@
     $(document).ready(function(){
 
         $(".post-content").fitVids();
-        $(".site-head").parallax("70%", 0.1);
+        $(".site-head").parallax("70%", 0.2);
 
         $('.page-scroll a').bind('click', function(event) {
             var $anchor = $(this);

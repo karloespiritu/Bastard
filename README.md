@@ -2,43 +2,54 @@ Bastard Theme for Ghost
 ==================
 
 
-A free boilerplate responsive dark theme for [Ghost](https://ghost.org) blogging platform.
+A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform. 
 
-Bastard theme uses Bootstrap Sass and Font Awesome for styling. The theme uses Grunt to manage tasks for compiling and minifying the theme components. It also use Bower to manage dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
+Bastard theme was built using Bootstrap 3, Sass, Font Awesome, Bower, and Grunt. Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
 
 ![Bastard](http://github.com/karloespiritu/Bastard)
 
 ## Demo
-I'm using this theme for my personal website, [karloespiritu.com](http://karloespiritu.com)
+I'm using this theme for my personal site, [karloespiritu.com](http://karloespiritu.com)
 
 
-## Setup
+## Theme Features
 
-Bastard Theme uses Grunt to lint, compile and concat the assets. Customize the theme by editing the `bastard.js` and `bastard.scss` files and fire up `grunt` or use the `grunt watch` while you build your own theme.
-
-* Copy theme folder to Ghost themes directory /content/themes
-* Run `bower install`
-* Run `npm install`
-* Start Ghost by running `npm start` on http://localhost:2368
-* Run `grunt watch` to start watching for file changes
-
-## Features
-
-* Full screen cover 
-* Full Responsive Layout
-* Developed using SASS
+* Clean and well-documented code
+* Developed using Bootstrap 3, SASS, Font Awesome, Grunt, and Bower
+* CSS stylesheets using SCSS(Sassy CSS) 
+* Fully responsive layout
+* Retina display ready, looks great on any device or resolution
+* Full screen cover page with parallax effect 
 * Syntax highlighting using Highlight.js
 * One file css/js for performance optimization
+* uses Imagemin and Svgmin to optimize jpeg, png, and svg images
+* Automatic linting, compiling, and minification of SCSS and JS files using Grunt
+* Easily update theme dependencies using Bower package manager
+* Includes FitVids.Js for fluid video embeds
+* It's free:) 
 
-The default page of Bastard theme uses a full screen cover image
+## Using Bastard Theme
 
-**Bootstrap SASS**
+1. Copy the theme folder inside `/content/themes` of Ghost.
+2. Restart Ghost and them go to Ghost's Settings (http://your.domain.com/ghost/settings/general/). Choose "Bastard" from the theme dropdown menu and save your changes.
+3. Optionally, you can update the background cover with your own image to replace the default cover image.
+4. Have fun :)
 
+## Customising Bastard Theme
 
-**Font Awesome**
+Bastard Theme uses Grunt to lint, compile, and concatenate the javascript and [SASS](http://sass-lang.com/) components. Customize the theme by editing the `assets/js/bastard.js` and `sass/*` files. Run `grunt` to compile your changes or use the `grunt watch` while you build your own theme.
 
+1. Make sure you have [Bower](http://bower.io) and [Grunt](gruntjs.com) installed on your system
+2. Copy theme folder to Ghost themes directory `/content/themes`. Open your terminal and make the theme's folder your current working directory.  
+3. Run `bower install` to install package dependencies
+4. Run `npm install` to install Grunt components 
+5. Restart Ghost and switch the theme to use `Bastard` in the Ghost's Settings. 
+7. Make your changes by updating `/sass/*`, `/assets/*`, and *.hbs files of the theme.
+6. Run `grunt watch` to start watching for file changes or run `grunt` to build your latest changes.
+7. If you have new images for the theme, just place them inside `image_sources` folder and Grunt will handle the optimisation automatically and store the optimized version inside `assets/images/`.
+8. Update the social media icon links by updating `partials/social.hbs`.
 
-### Resources/Dependencies
+### Resources & Dependencies
 
 - [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
 - [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/)
@@ -48,11 +59,13 @@ The default page of Bastard theme uses a full screen cover image
 - [HighlightJs - Syntax highlighting for the Web](http://highlightjs.org)
 - [FitVids.Js - A lightweight, easy-to-use jQuery plugin for fluid width video embeds](http://fitvidsjs.com/)
 
+### Getting in Touch
+
+If for some reason you need/want to get in touch with me, feel free to drop me an [email](mailto:karloespiritu.com) or find me on [Twitter](http://twitter.com/karloespiritu).
 
 ### License
 
 MIT License
-
 
 ### Author
 

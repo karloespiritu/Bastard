@@ -1,4 +1,4 @@
-/*! Bastard - v1.0.0 - 2014-05-05
+/*! Bastard - v1.0.0 - 2014-05-07
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -2255,7 +2255,7 @@ jQuery.extend( jQuery.easing,
     $(document).ready(function(){
 
         $(".post-content").fitVids();
-        $(".site-head").parallax("70%", 0.1);
+        $(".site-head").parallax("70%", 0.2);
 
         $('.page-scroll a').bind('click', function(event) {
             var $anchor = $(this);

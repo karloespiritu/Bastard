@@ -59,7 +59,6 @@ module.exports = function(grunt) {
       }
     },   
 
-
     /**
      * Compresses SVG files
      * Compresses all svg
@@ -75,7 +74,6 @@ module.exports = function(grunt) {
       }
     },
  
-
     // Compile Sass to CSS -  destination : source
     sass: {
       compile: {
