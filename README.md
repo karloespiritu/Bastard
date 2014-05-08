@@ -6,7 +6,7 @@ A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging plat
 
 Bastard theme was built using Bootstrap 3, Sass, Font Awesome, Bower, and Grunt. Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
 
-![Bastard](http://github.com/karloespiritu/Bastard)
+![Bastard](http://f.cl.ly/items/3f2X3p2K2A1E1z263k2K/bastard-sample2.png)
 
 ## Demo
 I'm using this theme for my personal site, [karloespiritu.com](http://karloespiritu.com)
