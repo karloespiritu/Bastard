@@ -25,6 +25,7 @@ I'm using this theme for my personal site, [karloespiritu.com](http://karloespir
 * uses Imagemin and Svgmin to optimize jpeg, png, and svg images
 * Automatic linting, compiling, and minification of SCSS and JS files using Grunt
 * Easily update theme dependencies using Bower package manager
+* Google Analytics integrated
 * Includes FitVids.Js for fluid video embeds
 * It's free:) 
 
