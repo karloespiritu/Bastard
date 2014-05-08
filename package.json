@@ -24,6 +24,7 @@
     "grunt-sass": "^0.12.1",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-contrib-imagemin": "^0.7.0",
-    "grunt-svgmin": "^0.4.0"
+    "grunt-svgmin": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.9.0"
   }
 }

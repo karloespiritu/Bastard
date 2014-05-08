@@ -14,17 +14,55 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js', 'package.json', 'assets/js/bastard.js']
     },
 
-    // Concatenate all JavaScript files
+    // Compile Sass to CSS -  destination : source
+    sass: {
+      compile: {
+        options: {
+          style: 'expanded',
+          banner: '<%= banner %>'
+        },
+        files: {
+          'assets/css/compiled_scss.css': 'assets/sass/style.scss'
+        },
+      },     
+    },
+
+    // Concatenate all JavaScript & CSS files
     concat: {
       options: {
         banner: '<%= banner %>',
         stripBanners: true,
         separator: ';',
       },
-      dist: {
+      js: {
         src: ['assets/bower_components/bootstrap/dist/js/bootstrap.js', 'assets/bower_components/highlightjs/highlight.pack.js', 'assets/js/jquery.fitvids.js', 'assets/js/jquery.parallax-1.1.3.js', 'assets/js/jquery.easing.1.3.js', 'assets/js/bastard.js'],
         dest: 'assets/js/scripts.js'
       },
+
+      css: {
+        src: ['assets/bower_components/highlightjs/styles/railscasts.css', 'assets/css/compiled_scss.css'],
+        dest: 'assets/css/bastard.css'
+      },      
+    },
+
+    autoprefixer: {
+      options: ['last 1 version'],
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'assets/css/',
+          src: '{,*/}*.css',
+          dest: 'assets/css/'
+        }]
+      }
+    },
+
+    //Minify css
+    cssmin: {
+      css: {
+        src: 'assets/css/bastard.css',
+        dest:'assets/css/bastard.min.css'
+      }
     },
 
     // Minify JavaScript with Uglify
@@ -36,7 +74,7 @@ module.exports = function(grunt) {
       },
       dist: {
           files: {
-            'assets/js/scripts.min.js': ['<%= concat.dist.dest %>']
+            'assets/js/scripts.min.js': ['<%= concat.js.dest %>']
           }
         }
     },
@@ -73,32 +111,7 @@ module.exports = function(grunt) {
         }]
       }
     },
- 
-    // Compile Sass to CSS -  destination : source
-    sass: {
-      compile: {
-        options: {
-          style: 'compressed',
-          banner: '<%= banner %>'
-        },
-        files: {
-          'assets/css/style.min.css': 'assets/sass/style.scss'
-        },
-      },     
-    },
-
-    autoprefixer: {
-      options: ['last 1 version'],
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'assets/css/',
-          src: '{,*/}*.css',
-          dest: 'assets/css/'
-        }]
-      }
-    },
-
+    
     // Simple config to run sass, jshint and uglify any time a js or sass file is added, modified or deleted
     watch: {
       sass: {
@@ -110,8 +123,12 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       concat: {
-        files : ['<%= concat.dist.src %>'],
+        files : ['<%= concat.js.src %>','<%= concat.css.src %>'],
         tasks: ['concat']
+      },
+      cssmin: {
+        files : ['<%= cssmin.css.src %>','<%= cssmin.css.dest %>'],
+        tasks: ['cssmin']
       },
       uglify: {
         files: ['assets/js/bastard.js'],
@@ -132,6 +149,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
@@ -140,6 +158,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default tasks
-  grunt.registerTask('default', ['jshint', 'concat', 'sass', 'autoprefixer','uglify', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['jshint', 'sass', 'concat', 'autoprefixer', 'cssmin','uglify', 'imagemin', 'svgmin']);
 
 };
