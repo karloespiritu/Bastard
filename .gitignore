@@ -2,4 +2,5 @@
 assets/bower_components
 .sass-cache
 .DS_Store
+assets/css/compiled_scss.css
 image_sources
