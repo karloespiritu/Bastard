@@ -11,18 +11,20 @@ module.exports = function(grunt) {
 
     // JSHint JavaScript files
     jshint: {
-      files: ['Gruntfile.js', 'package.json', 'assets/js/bastard.js']
+      files: ['Gruntfile.js', 
+              'package.json', 
+              'assets/js/bastard.js']
     },
 
     // Compile Sass to CSS -  destination : source
     sass: {
       compile: {
         options: {
-          style: 'expanded',
+          style: 'compact',
           banner: '<%= banner %>'
         },
         files: {
-          'assets/css/compiled_scss.css': 'assets/sass/style.scss'
+          'assets/css/compiled_sass.css': 'assets/sass/style.scss'
         },
       },     
     },
@@ -35,12 +37,20 @@ module.exports = function(grunt) {
         separator: ';',
       },
       js: {
-        src: ['assets/bower_components/bootstrap/dist/js/bootstrap.js', 'assets/bower_components/highlightjs/highlight.pack.js', 'assets/js/jquery.fitvids.js', 'assets/js/jquery.parallax-1.1.3.js', 'assets/js/jquery.easing.1.3.js', 'assets/js/bastard.js'],
+        src: ['assets/bower_components/bootstrap/dist/js/bootstrap.js',
+              'assets/bower_components/highlightjs/highlight.pack.js',
+              'assets/js/jquery.fitvids.js',
+              'assets/js/jquery.parallax-1.1.3.js', 
+              'assets/js/jquery.easing.1.3.js', 
+              'assets/js/bastard.js'],
+
         dest: 'assets/js/scripts.js'
       },
 
       css: {
-        src: ['assets/bower_components/highlightjs/styles/railscasts.css', 'assets/css/compiled_scss.css'],
+        src: ['assets/bower_components/highlightjs/styles/railscasts.css', 
+              'assets/css/compiled_sass.css'],
+
         dest: 'assets/css/bastard.css'
       },      
     },
@@ -51,7 +61,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'assets/css/',
-          src: '{,*/}*.css',
+          src: '{,.css',
           dest: 'assets/css/'
         }]
       }
@@ -81,7 +91,7 @@ module.exports = function(grunt) {
 
     /**
      * Compresses Image files
-     * Compresses all images
+     * Compresses all jpg, png images
      */
     imagemin: {
       build: {
@@ -99,7 +109,6 @@ module.exports = function(grunt) {
 
     /**
      * Compresses SVG files
-     * Compresses all svg
      */
     svgmin: {
       build: {
@@ -111,7 +120,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
     // Simple config to run sass, jshint and uglify any time a js or sass file is added, modified or deleted
     watch: {
       sass: {
@@ -158,6 +167,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default tasks
-  grunt.registerTask('default', ['jshint', 'sass', 'concat', 'autoprefixer', 'cssmin','uglify', 'imagemin', 'svgmin']);
-
+  grunt.registerTask('default', 
+    [ 'jshint', 
+      'sass',
+      'concat',
+      'cssmin',
+      'uglify', 
+      'imagemin', 
+      'svgmin'
+    ]
+  );
 };

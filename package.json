@@ -1,7 +1,7 @@
 {
   "name": "Bastard",
   "version": "1.0.0",
-  "description": "A Bastard Theme for Ghost (Grunt, Twitter Bootstrap, Bower, Font Awesome, Color Me Sass",
+  "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt",
   "author": {
     "name": "Karlo Espiritu",
     "email": "karloespiritu@gmail.com",
