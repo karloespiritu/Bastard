@@ -40,7 +40,7 @@ I'm using this theme for my personal site, [karloespiritu.com](http://karloespir
 
 Bastard Theme uses Grunt to lint, compile, and concatenate the javascript and [SASS](http://sass-lang.com/) components. Customize the theme by editing the `assets/js/bastard.js` and `sass/*` files. Run `grunt` to compile your changes or use the `grunt watch` while you build your own theme.
 
-1. Make sure you have [Bower](http://bower.io) and [Grunt](gruntjs.com) installed on your system
+1. Make sure you have [Node](http://nodejs.org), [Bower](http://bower.io) and [Grunt](gruntjs.com) installed on your system
 2. Copy theme folder to Ghost themes directory `/content/themes`. Open your terminal and make the theme's folder your current working directory.  
 3. Run `bower install` to install package dependencies
 4. Run `npm install` to install Grunt components 
