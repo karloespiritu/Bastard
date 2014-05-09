@@ -19,8 +19,12 @@
     letter-spacing: -1px;
   }
   .blog-description {
-    font-size: 1.7rem;
-    line-height: 1.5em;
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
+  .blog-logo img {
+    max-height: 90px;
+    max-width: 320px;
   }
   .post {
     font-size: 0.9em;
@@ -47,15 +51,27 @@
   h4 {
     font-size: 2.8rem;
   }
+  .site-footer {
+    margin-top: 5rem;
+    font-size: 0.9rem;
+  }  
+  .btn-social {
+    width: 42px;
+    height: 42px;  
+    border: 2px solid $gray-light;
+    font-size: 18px;
+    line-height: 40px;
+  }  
 }
 
 /* ==========================================================================
    Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) { 
   .blog-logo img {
     max-height: 80px;
+    max-width: 210px;
   }
   .inner, .pagination {
     width: auto;
@@ -152,7 +168,14 @@
   }
   .site-footer {
     margin-top: 6rem;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+  }
+  .btn-social {
+    width: 32px;
+    height: 32px;  
+    border: 1px solid $gray-light;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
