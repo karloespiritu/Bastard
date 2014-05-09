@@ -136,7 +136,7 @@ module.exports = function(grunt) {
         tasks: ['concat']
       },
       cssmin: {
-        files : ['<%= cssmin.css.src %>','<%= cssmin.css.dest %>'],
+        files : ['<%= cssmin.css.src %>'],
         tasks: ['cssmin']
       },
       uglify: {
