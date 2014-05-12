@@ -4,19 +4,18 @@ Bastard Theme for Ghost
 
 A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform. 
 
-Bastard theme was built using Bootstrap 3, Sass, Font Awesome, Bower, and Grunt. Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the bastard.js and bastard.scss files.
+Bastard theme was built using [Bootstrap 3](http://getbootstrap.com/), [SASS](http://sass-lang.com), [Font Awesome](http://fortawesome.github.io/Font-Awesome/), [Bower](http://bower.io/), and [Grunt](http://gruntjs.com/). Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the `bastard.js` and `bastard.scss` files.
 
 ![Bastard](http://f.cl.ly/items/3f2X3p2K2A1E1z263k2K/bastard-sample2.png)
 
 ## Demo
 I'm using this theme for my personal site, [karloespiritu.com](http://karloespiritu.com)
 
-
 ## Theme Features
 
 * Clean and well-documented code
 * Developed using Bootstrap 3, SASS, Font Awesome, Grunt, and Bower
-* CSS stylesheets using SCSS(Sassy CSS) 
+* Organized CSS3 stylesheets using [SASS](http://sass-lang.com)
 * Fully responsive layout
 * Retina display ready, looks great on any device or resolution
 * Full screen cover page with parallax effect 
@@ -24,6 +23,7 @@ I'm using this theme for my personal site, [karloespiritu.com](http://karloespir
 * One file css/js for performance optimization
 * uses Imagemin and Svgmin to optimize jpeg, png, and svg images
 * Automatic linting, compiling, and minification of SCSS and JS files using Grunt
+* Automatic image file size optimization using IMGMin and SVGMin
 * Easily update theme dependencies using Bower package manager
 * Google Analytics integrated
 * Includes FitVids.Js for fluid video embeds
@@ -32,7 +32,7 @@ I'm using this theme for my personal site, [karloespiritu.com](http://karloespir
 ## Using Bastard Theme
 
 1. Copy the theme folder inside `/content/themes` of Ghost.
-2. Restart Ghost and them go to Ghost's Settings (http://your.domain.com/ghost/settings/general/). Choose "Bastard" from the theme dropdown menu and save your changes.
+2. Restart Ghost and then go to Ghost's Settings (http://your.domain.com/ghost/settings/general/). Choose "Bastard" from the theme dropdown menu and save your changes.
 3. Optionally, you can update the background cover with your own image to replace the default cover image.
 4. Have fun :)
 
@@ -45,7 +45,7 @@ Bastard Theme uses Grunt to lint, compile, and concatenate the javascript and [S
 3. Run `bower install` to install package dependencies
 4. Run `npm install` to install Grunt components 
 5. Restart Ghost and switch the theme to use `Bastard` in the Ghost's Settings. 
-7. Make your changes by updating `/sass/*`, `/assets/*`, and *.hbs files of the theme.
+7. Make your changes by updating `/sass/*`, `/assets/*`, and `*.hbs` files of the theme.
 6. Run `grunt watch` to start watching for file changes or run `grunt` to build your latest changes.
 7. If you have new images for the theme, just place them inside `image_sources` folder and Grunt will handle the optimisation automatically and store the optimized version inside `assets/images/`.
 8. Update the social media icon links by updating `partials/social.hbs`.
@@ -60,9 +60,9 @@ Bastard Theme uses Grunt to lint, compile, and concatenate the javascript and [S
 - [HighlightJs - Syntax highlighting for the Web](http://highlightjs.org)
 - [FitVids.Js - A lightweight, easy-to-use jQuery plugin for fluid width video embeds](http://fitvidsjs.com/)
 
-### Getting in Touch
+### To Get in Touch
 
-If for some reason you need/want to get in touch with me, feel free to drop me an [email](mailto:karloespiritu.com) or find me on [Twitter](http://twitter.com/karloespiritu).
+To get in touch, you can drop me an [email](mailto:karloespiritu.com) or find me on [Twitter](http://twitter.com/karloespiritu).
 
 ### License
 
@@ -71,7 +71,7 @@ MIT License
 ### Author
 
 **Karlo Espiritu**
-
+- [karloespiritu@gmail.com](mailto:karloespiritu@gmail.com)
 - [http://twitter.com/karloespiritu](https://twitter.com/karloespiritu)
 - [http://github.com/karloespiritu](https://github.com/karloespiritu)
 - [http://karloespiritu.com](http://karloespiritu.com)
