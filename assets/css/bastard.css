@@ -1,4 +1,4 @@
-/*! Bastard - v1.0.0 - 2014-05-12
+/*! Bastard - v1.0.0 - 2014-05-15
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -179,7 +179,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;/*! Bastard - v1.0.0 - 2014-05-12
+;/*! Bastard - v1.0.0 - 2014-05-15
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -2162,11 +2162,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { .hidden-print { display: none !important; } }
 /*!
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH -------------------------- */
-@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.0.3"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.1.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -2209,21 +2209,18 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @-o-keyframes spin { 0% { -o-transform: rotate(0deg); }
   100% { -o-transform: rotate(359deg); } }
 
-@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); }
-  100% { -ms-transform: rotate(359deg); } }
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
 
-@keyframes spin { 0% { transform: rotate(0deg); }
-  100% { transform: rotate(359deg); } }
+.fa-rotate-90 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
 
-.fa-rotate-90 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
+.fa-rotate-180 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
-.fa-rotate-180 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+.fa-rotate-270 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); }
 
-.fa-rotate-270 { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation); -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); }
+.fa-flip-horizontal { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); -webkit-transform: scale(-1, 1); -moz-transform: scale(-1, 1); -ms-transform: scale(-1, 1); -o-transform: scale(-1, 1); transform: scale(-1, 1); }
 
-.fa-flip-horizontal { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation); -webkit-transform: scale(-1, 1); -moz-transform: scale(-1, 1); -ms-transform: scale(-1, 1); -o-transform: scale(-1, 1); transform: scale(-1, 1); }
-
-.fa-flip-vertical { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation); -webkit-transform: scale(1, -1); -moz-transform: scale(1, -1); -ms-transform: scale(1, -1); -o-transform: scale(1, -1); transform: scale(1, -1); }
+.fa-flip-vertical { filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); -webkit-transform: scale(1, -1); -moz-transform: scale(1, -1); -ms-transform: scale(1, -1); -o-transform: scale(1, -1); transform: scale(1, -1); }
 
 .fa-stack { position: relative; display: inline-block; width: 2em; height: 2em; line-height: 2em; vertical-align: middle; }
 
@@ -2354,7 +2351,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-video-camera:before { content: "\f03d"; }
 
-.fa-picture-o:before { content: "\f03e"; }
+.fa-photo:before, .fa-image:before, .fa-picture-o:before { content: "\f03e"; }
 
 .fa-pencil:before { content: "\f040"; }
 
@@ -2590,7 +2587,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-square:before { content: "\f0c8"; }
 
-.fa-bars:before { content: "\f0c9"; }
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before { content: "\f0c9"; }
 
 .fa-list-ul:before { content: "\f0ca"; }
 
@@ -2628,9 +2625,9 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-unsorted:before, .fa-sort:before { content: "\f0dc"; }
 
-.fa-sort-down:before, .fa-sort-asc:before { content: "\f0dd"; }
+.fa-sort-down:before, .fa-sort-desc:before { content: "\f0dd"; }
 
-.fa-sort-up:before, .fa-sort-desc:before { content: "\f0de"; }
+.fa-sort-up:before, .fa-sort-asc:before { content: "\f0de"; }
 
 .fa-envelope:before { content: "\f0e0"; }
 
@@ -2752,9 +2749,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .fa-code:before { content: "\f121"; }
 
-.fa-reply-all:before { content: "\f122"; }
-
-.fa-mail-reply-all:before { content: "\f122"; }
+.fa-mail-reply-all:before, .fa-reply-all:before { content: "\f122"; }
 
 .fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before { content: "\f123"; }
 
@@ -2973,6 +2968,148 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .fa-turkish-lira:before, .fa-try:before { content: "\f195"; }
 
 .fa-plus-square-o:before { content: "\f196"; }
+
+.fa-space-shuttle:before { content: "\f197"; }
+
+.fa-slack:before { content: "\f198"; }
+
+.fa-envelope-square:before { content: "\f199"; }
+
+.fa-wordpress:before { content: "\f19a"; }
+
+.fa-openid:before { content: "\f19b"; }
+
+.fa-institution:before, .fa-bank:before, .fa-university:before { content: "\f19c"; }
+
+.fa-mortar-board:before, .fa-graduation-cap:before { content: "\f19d"; }
+
+.fa-yahoo:before { content: "\f19e"; }
+
+.fa-google:before { content: "\f1a0"; }
+
+.fa-reddit:before { content: "\f1a1"; }
+
+.fa-reddit-square:before { content: "\f1a2"; }
+
+.fa-stumbleupon-circle:before { content: "\f1a3"; }
+
+.fa-stumbleupon:before { content: "\f1a4"; }
+
+.fa-delicious:before { content: "\f1a5"; }
+
+.fa-digg:before { content: "\f1a6"; }
+
+.fa-pied-piper-square:before, .fa-pied-piper:before { content: "\f1a7"; }
+
+.fa-pied-piper-alt:before { content: "\f1a8"; }
+
+.fa-drupal:before { content: "\f1a9"; }
+
+.fa-joomla:before { content: "\f1aa"; }
+
+.fa-language:before { content: "\f1ab"; }
+
+.fa-fax:before { content: "\f1ac"; }
+
+.fa-building:before { content: "\f1ad"; }
+
+.fa-child:before { content: "\f1ae"; }
+
+.fa-paw:before { content: "\f1b0"; }
+
+.fa-spoon:before { content: "\f1b1"; }
+
+.fa-cube:before { content: "\f1b2"; }
+
+.fa-cubes:before { content: "\f1b3"; }
+
+.fa-behance:before { content: "\f1b4"; }
+
+.fa-behance-square:before { content: "\f1b5"; }
+
+.fa-steam:before { content: "\f1b6"; }
+
+.fa-steam-square:before { content: "\f1b7"; }
+
+.fa-recycle:before { content: "\f1b8"; }
+
+.fa-automobile:before, .fa-car:before { content: "\f1b9"; }
+
+.fa-cab:before, .fa-taxi:before { content: "\f1ba"; }
+
+.fa-tree:before { content: "\f1bb"; }
+
+.fa-spotify:before { content: "\f1bc"; }
+
+.fa-deviantart:before { content: "\f1bd"; }
+
+.fa-soundcloud:before { content: "\f1be"; }
+
+.fa-database:before { content: "\f1c0"; }
+
+.fa-file-pdf-o:before { content: "\f1c1"; }
+
+.fa-file-word-o:before { content: "\f1c2"; }
+
+.fa-file-excel-o:before { content: "\f1c3"; }
+
+.fa-file-powerpoint-o:before { content: "\f1c4"; }
+
+.fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before { content: "\f1c5"; }
+
+.fa-file-zip-o:before, .fa-file-archive-o:before { content: "\f1c6"; }
+
+.fa-file-sound-o:before, .fa-file-audio-o:before { content: "\f1c7"; }
+
+.fa-file-movie-o:before, .fa-file-video-o:before { content: "\f1c8"; }
+
+.fa-file-code-o:before { content: "\f1c9"; }
+
+.fa-vine:before { content: "\f1ca"; }
+
+.fa-codepen:before { content: "\f1cb"; }
+
+.fa-jsfiddle:before { content: "\f1cc"; }
+
+.fa-life-bouy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before { content: "\f1cd"; }
+
+.fa-circle-o-notch:before { content: "\f1ce"; }
+
+.fa-ra:before, .fa-rebel:before { content: "\f1d0"; }
+
+.fa-ge:before, .fa-empire:before { content: "\f1d1"; }
+
+.fa-git-square:before { content: "\f1d2"; }
+
+.fa-git:before { content: "\f1d3"; }
+
+.fa-hacker-news:before { content: "\f1d4"; }
+
+.fa-tencent-weibo:before { content: "\f1d5"; }
+
+.fa-qq:before { content: "\f1d6"; }
+
+.fa-wechat:before, .fa-weixin:before { content: "\f1d7"; }
+
+.fa-send:before, .fa-paper-plane:before { content: "\f1d8"; }
+
+.fa-send-o:before, .fa-paper-plane-o:before { content: "\f1d9"; }
+
+.fa-history:before { content: "\f1da"; }
+
+.fa-circle-thin:before { content: "\f1db"; }
+
+.fa-header:before { content: "\f1dc"; }
+
+.fa-paragraph:before { content: "\f1dd"; }
+
+.fa-sliders:before { content: "\f1de"; }
+
+.fa-share-alt:before { content: "\f1e0"; }
+
+.fa-share-alt-square:before { content: "\f1e1"; }
+
+.fa-bomb:before { content: "\f1e2"; }
 
 /* ========================================================================== Table of Contents ========================================================================== */
 /* 0.  Global Variables 1.  Icons 2.  General 3.  Utilities 4.  Navigation 5.  General 6.  Single Post 7.  Tag Archive 8.  Third Party Elements 9.  Pagination 10. Footer 11. Social 12. Media Queries */
