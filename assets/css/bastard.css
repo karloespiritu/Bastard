@@ -1,4 +1,4 @@
-/*! Bastard - v1.0.1 - 2014-05-16
+/*! Bastard - v1.1.0 - 2014-05-17
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -179,7 +179,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;/*! Bastard - v1.0.1 - 2014-05-16
+;/*! Bastard - v1.1.0 - 2014-05-17
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -3407,8 +3407,8 @@ h1.post-title { color: #caad00; }
 
 .btn-social { display: inline-block; width: 48px; height: 48px; border: 1px solid #bbbbbb; border-radius: 100%; text-align: center; font-size: 24px; line-height: 46px; }
 
-/* ========================================================================== 13. Slider menu ========================================================================== */
-.site-nav-logo { position: fixed; left: 10px; top: 10px; width: 45px; height: 45px; background-color: rgba(0, 0, 0, 0.3); overflow: hidden; z-index: 99; }
+/* ========================================================================== 12. Slider Menu ========================================================================== */
+.site-nav-logo { position: fixed; left: 10px; top: 10px; width: 45px; height: 45px; background-color: rgba(0, 0, 0, 0.6); overflow: hidden; z-index: 99; }
 .site-nav-logo .logo { display: block; position: absolute; top: 5px; left: 5px; width: 35px; height: 35px; border-radius: 100%; background-size: cover; background-repeat: no-repeat; }
 
 #slidemenu-wrapper { margin-left: -250px; left: 0; width: 250px; background: #171717; position: fixed; height: 100%; overflow-y: auto; z-index: 1000; -webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -ms-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; transition: all 0.4s ease 0s; }
