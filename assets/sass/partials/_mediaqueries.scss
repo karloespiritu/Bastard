@@ -1,5 +1,5 @@
   /* ==========================================================================
-   12. Media Queries - Smaller than 900px
+   13. Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
@@ -68,7 +68,12 @@
    Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) { 
+@media only screen and (max-width: 500px) {
+
+  .site-nav-logo {
+    position: relative;
+  }
+
   .blog-logo img {
     max-height: 80px;
     max-width: 210px;

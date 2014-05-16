@@ -12,7 +12,18 @@
 
     $(document).ready(function(){
 
+        /* Custom JavaScript for the Slide Menu */
+        $("#slidemenu-close").click(function(e) {
+            e.preventDefault();
+            $("#slidemenu-wrapper").toggleClass("active");
+        });
+        $("#slidemenu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#slidemenu-wrapper").toggleClass("active");
+        });
+        /* FitVids */
         $(".post-content").fitVids();
+        /* Cover Parralax effect */
         $(".site-head").parallax("70%", 0.2);
 
         $('.page-scroll a').bind('click', function(event) {

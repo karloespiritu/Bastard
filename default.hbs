@@ -45,7 +45,15 @@
     </script>
   </head>
 <body class="{{body_class}}">
-    
+    <!-- Side Menu -->
+        <!--Gravatar link, update avatar image url to use your own; s = size in pixels -->
+    <a id="slidemenu-toggle" href="{{@blog.url}}" class="site-nav-logo"><span class="logo" style="background-image: url(http://gravatar.com/avatar/2bc65e2b16776cbdd069017c3338d8da?s=35)"></span></a>
+        <!-- /Gravatar link -->
+    <div id="slidemenu-wrapper">
+        {{> slidemenu}}
+    </div>
+    <!-- /Side Menu -->
+
     {{! Everything else gets inserted here }}
     {{{body}}}
 
