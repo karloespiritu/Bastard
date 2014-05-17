@@ -1,6 +1,6 @@
 {
   "name": "Bastard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "bootstrap": "~3.1.1",
     "highlightjs": "~8.0.0",
