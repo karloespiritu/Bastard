@@ -12,6 +12,12 @@ Bastard theme was built using [Bootstrap 3](http://getbootstrap.com/), [SASS](ht
 
 I'm using this theme for my personal site, [karloespiritu.com](http://karloespiritu.com)
 
+## Download
+
+You can download the theme here:
+
+<a href="http://karloespiritu.github.io/Bastard/" type="button" class="btn btn-primary btn-lg active">Download Bastard Theme</a>
+
 ## Theme Features
 
 * Clean and well-documented code
