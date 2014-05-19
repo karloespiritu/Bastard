@@ -54,6 +54,7 @@ Bastard theme uses Grunt to lint, compile, and concatenate the javascript and [S
 6. Run `grunt watch` to start watching for file changes or run `grunt` to build your latest changes.
 7. If you have new images for the theme, just place them inside `image_sources` folder and Grunt will handle the optimisation automatically and store the optimized version inside `assets/images/`.
 8. Update the social media icon links by updating `partials/social.hbs`.
+9. Update gravatar by updating URL in `partials/gravatar.hbs`.
 
 ## Resources & Dependencies
 
