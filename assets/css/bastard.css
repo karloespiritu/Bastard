@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.1 - 2014-05-17
+/*! Bastard - v1.1.1 - 2014-05-20
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -179,7 +179,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;/*! Bastard - v1.1.1 - 2014-05-17
+;/*! Bastard - v1.1.1 - 2014-05-20
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -3112,8 +3112,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .fa-bomb:before { content: "\f1e2"; }
 
 /* ========================================================================== Table of Contents ========================================================================== */
-/* 0.  Global Variables 1.  Icons 2.  General 3.  Utilities 4.  Navigation 5.  General 6.  Single Post 7.  Tag Archive 8.  Third Party Elements 9.  Pagination 10. Footer 11. Social 12. Slider Menu 13. Media Queries */
-/* ========================================================================== Main colors ========================================================================== */
+/* 0.  Theme colors 1.  Icons 2.  General 3.  Utilities 4.  Navigation 5.  General 6.  Single Post 7.  Tag Archive 8.  Third Party Elements 9.  Pagination 10. Footer 11. Social 12. Slider Menu 13. Media Queries */
+/* ========================================================================== Theme colors ========================================================================== */
 /* ========================================================================== 1. Icons - Sets up the icon font and respective classes ========================================================================== */
 /* Import the font file with the icons in it */
 @font-face { font-family: 'icons'; src: url("../fonts/icons.eot"); src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg"); font-weight: normal; font-style: normal; }
