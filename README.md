@@ -26,7 +26,6 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 * Full screen cover page with parallax effect 
 * Syntax highlighting using Highlight.js
 * One file css/js for performance optimization
-* uses Imagemin and Svgmin to optimize jpeg, png, and svg images
 * Automatic linting, compiling, and minification of SCSS and JS files using Grunt
 * Automatic image file size optimization using IMGMin and SVGMin
 * Easily update theme dependencies using Bower package manager
