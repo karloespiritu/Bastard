@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.1 - 2014-05-20
+/*! Bastard - v1.1.1 - 2014-05-25
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -2253,7 +2253,11 @@ jQuery.extend( jQuery.easing,
     "use strict";
 
     $(document).ready(function(){
-
+        /* Scroll to Top */
+        $("#scroll-to-top").click(function() {
+          $('body').animate({ scrollTop: "500px" }, "slow");
+          return false;
+        });
         /* Custom JavaScript for the Slide Menu */
         $("#slidemenu-close").click(function(e) {
             e.preventDefault();

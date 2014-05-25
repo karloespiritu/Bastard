@@ -11,7 +11,11 @@
     "use strict";
 
     $(document).ready(function(){
-
+        /* Scroll to Top */
+        $("#scroll-to-top").click(function() {
+          $('body').animate({ scrollTop: "500px" }, "slow");
+          return false;
+        });
         /* Custom JavaScript for the Slide Menu */
         $("#slidemenu-close").click(function(e) {
             e.preventDefault();
