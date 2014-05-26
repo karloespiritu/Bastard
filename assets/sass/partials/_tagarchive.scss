@@ -17,22 +17,18 @@
 }
 
 .tag-archive-header {
-  padding: 20px 0;
+ 
   text-align: center;
   max-width: 700px;
   margin: 4rem auto;
   position: relative;
-  text-transform: capitalize;
   &:after {
     display: block;
     content: "";
-    width: 700px;
     height: 70px;
-    position: absolute;
     bottom: -15px;
-    background: url(../images/tag-divider.svg) no-repeat;
+    background: url(../images/tag-divider.svg) no-repeat top center;
     background-size: 700px 20px;
-    background-position: center center;
   }
 }
 

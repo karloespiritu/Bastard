@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.2 - 2014-05-26
+/*! Bastard - v1.1.3 - 2014-05-26
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -179,7 +179,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;/*! Bastard - v1.1.2 - 2014-05-26
+;/*! Bastard - v1.1.3 - 2014-05-26
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2014 Karlo Espiritu - MIT License
 */
@@ -3349,8 +3349,8 @@ h1.post-title { color: #caad00; }
 .archive-template .site-head a, .tag-template .site-head a { color: #fff; }
 .archive-template .blog-logo, .tag-template .blog-logo { display: block; margin-top: 5rem; }
 
-.tag-archive-header { padding: 20px 0; text-align: center; max-width: 700px; margin: 4rem auto; position: relative; text-transform: capitalize; }
-.tag-archive-header:after { display: block; content: ""; width: 700px; height: 70px; position: absolute; bottom: -15px; background: url(../images/tag-divider.svg) no-repeat; background-size: 700px 20px; background-position: center center; }
+.tag-archive-header { text-align: center; max-width: 700px; margin: 4rem auto; position: relative; }
+.tag-archive-header:after { display: block; content: ""; height: 70px; bottom: -15px; background: url(../images/tag-divider.svg) no-repeat top center; background-size: 700px 20px; }
 
 .archive-template .blog-title { display: inline-block; padding: 2.5rem 0; }
 
