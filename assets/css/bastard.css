@@ -3346,10 +3346,11 @@ h1.post-title { color: #caad00; }
 /* Drop the share links in the space to the right. Doing it like this means it's easier for the author bio to be flexible at smaller screen sizes while the share links remain at a fixed width the whole time */
 /* ========================================================================== 7. Tag archive ========================================================================== */
 .archive-template .site-head, .tag-template .site-head { height: auto; padding-bottom: 5rem; }
-.archive-template .site-head a, .tag-template .site-head a { color: #fff; }
+.archive-template .site-head a, .tag-template .site-head a { color: #848482; }
 .archive-template .blog-logo, .tag-template .blog-logo { display: block; margin-top: 5rem; }
 
 .tag-archive-header { text-align: center; max-width: 700px; margin: 4rem auto; position: relative; }
+.tag-archive-header h1 { font-family: Georgia, Times, "Times New Roman", serif; letter-spacing: 0.1em; }
 .tag-archive-header:after { display: block; content: ""; height: 70px; bottom: -15px; background: url(../images/tag-divider.svg) no-repeat top center; background-size: 700px 20px; }
 
 .archive-template .blog-title { display: inline-block; padding: 2.5rem 0; }
