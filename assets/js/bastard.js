@@ -13,7 +13,7 @@
     $(document).ready(function(){
         /* Scroll to Top */
         $("#scroll-to-top").click(function() {
-          $('body').animate({ scrollTop: "500px" }, "slow");
+          $('body').animate({ scrollTop:$('#top').position().top }, 'slow');
           return false;
         });
         /* Custom JavaScript for the Slide Menu */

@@ -2,7 +2,7 @@
    7. Tag archive
    ========================================================================== */
 
-.archive-template {
+.archive-template, .tag-template {
   .site-head {
     height: auto;
     padding-bottom: 5rem;
@@ -21,23 +21,18 @@
   text-align: center;
   max-width: 700px;
   margin: 4rem auto;
-  border-bottom: 1px solid #EBF2F6;
   position: relative;
+  text-transform: capitalize;
   &:after {
     display: block;
     content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
+    width: 700px;
+    height: 70px;
     position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+    bottom: -15px;
+    background: url(../images/tag-divider.svg) no-repeat;
+    background-size: 700px 20px;
+    background-position: center center;
   }
 }
 
