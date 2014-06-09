@@ -11,6 +11,8 @@
     "use strict";
 
     $(document).ready(function(){
+        /* Higlight.js */
+        hljs.initHighlightingOnLoad();
         /* Scroll to Top */
         $("#scroll-to-top").click(function() {
           $('body').animate({ scrollTop:$('#top').position().top }, 'slow');
@@ -81,7 +83,7 @@
           timeout = setTimeout(delayed, threshold || 100);
       };
   };
-  // smartresize 
+  // smartresize
   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
