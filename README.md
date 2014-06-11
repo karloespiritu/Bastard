@@ -2,7 +2,7 @@ Bastard Theme for Ghost
 ==================
 
 
-A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform. 
+A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform.
 
 Bastard theme was built using [Bootstrap 3](http://getbootstrap.com/), [SASS](http://sass-lang.com), [Font Awesome](http://fortawesome.github.io/Font-Awesome/), [Bower](http://bower.io/), and [Grunt](http://gruntjs.com/). Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the `bastard.js` and `/assets/sass/*.scss` files.
 
@@ -23,15 +23,15 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 * Organized CSS3 stylesheets using [SASS](http://sass-lang.com)
 * Fully responsive layout
 * Retina display ready, looks great on any device or resolution
-* Full screen cover page with parallax effect 
-* Syntax highlighting using Highlight.js
+* Full screen cover page with parallax effect
+* Syntax highlighting using [HighlightJs](http://highlightjs.org)
 * One file css/js for performance optimization
 * Automatic linting, compiling, and minification of SCSS and JS files using Grunt
 * Automatic image file size optimization using IMGMin and SVGMin
 * Easily update theme dependencies using Bower package manager
 * Google Analytics integrated
 * Includes FitVids.Js for fluid video embeds
-* It's free:) 
+* It's free:)
 
 ## Using Bastard Theme
 
@@ -45,10 +45,10 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 Bastard theme uses Grunt to lint, compile, and concatenate the javascript and [SASS](http://sass-lang.com/) components. Customize the theme by editing the `assets/js/bastard.js` and `sass/*` files. Run `grunt` to compile your changes or use the `grunt watch` while you build your own theme.
 
 1. Make sure you have [Node.js](http://nodejs.org), [Bower](http://bower.io) and [Grunt](gruntjs.com) installed on your system.
-2. Copy theme folder to Ghost themes directory `/content/themes`. Open your terminal and make the theme's folder your current working directory.  
+2. Copy theme folder to Ghost themes directory `/content/themes`. Open your terminal and make the theme's folder your current working directory.
 3. Run `bower install` to install package dependencies.
-4. Run `npm install` to install Grunt components. 
-5. Restart Ghost and switch the theme to use `Bastard` in the Ghost's Settings. 
+4. Run `npm install` to install Grunt components.
+5. Restart Ghost and switch the theme to use `Bastard` in the Ghost's Settings.
 7. Make your changes by updating `/sass/*`, `/assets/*`, and `*.hbs` files of the theme.
 6. Run `grunt watch` to start watching for file changes or run `grunt` to build your latest changes.
 7. If you have new images for the theme, just place them inside `image_sources` folder and Grunt will handle the optimisation automatically and store the optimized version inside `assets/images/`.
