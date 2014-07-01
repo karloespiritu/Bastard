@@ -19,7 +19,7 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 ## Theme Features
 
 * Clean and well-documented code
-* Developed using Bootstrap 3, SASS, Font Awesome, Grunt, and Bower
+* Developed using Bootstrap 3.2, SASS, Font Awesome, Grunt, and Bower
 * Organized CSS3 stylesheets using [SASS](http://sass-lang.com)
 * Fully responsive layout
 * Retina display ready, looks great on any device or resolution
