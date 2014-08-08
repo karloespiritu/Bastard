@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="50px"
+   height="50px"
+   viewBox="0 0 50 50"
+   enable-background="new 0 0 50 50"
+   xml:space="preserve"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gil-bow-logo.svg"><metadata
+   id="metadata9"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs7" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1204"
+   inkscape:window-height="702"
+   id="namedview5"
+   showgrid="false"
+   inkscape:zoom="6.675088"
+   inkscape:cx="53.259043"
+   inkscape:cy="18.17595"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="layer1" />
+<path
+   d="M40.809,19.016c-0.246-0.764-0.866-1.779-2.422-2.284c-0.376-0.122-0.775-0.183-1.189-0.183  c-3.226,0-7.063,3.945-8.995,6.201c-0.71-1.008-1.878-1.671-3.202-1.671s-2.491,0.664-3.203,1.671  c-1.93-2.255-5.769-6.201-8.995-6.201c-0.414,0-0.814,0.062-1.189,0.183c-1.556,0.505-2.176,1.521-2.423,2.284  c-0.671,2.084,0.662,4.656,1.5,5.984c-0.838,1.328-2.171,3.899-1.5,5.984c0.247,0.764,0.867,1.779,2.423,2.284  c0.375,0.122,0.775,0.183,1.189,0.183c3.226,0,7.064-3.946,8.996-6.201c0.71,1.008,1.878,1.671,3.202,1.671s2.491-0.663,3.202-1.671  c1.931,2.255,5.769,6.201,8.995,6.201c0.414,0,0.813-0.062,1.189-0.183c1.556-0.505,2.176-1.521,2.422-2.284  c0.671-2.084-0.662-4.656-1.5-5.984C40.146,23.672,41.479,21.101,40.809,19.016z M25,26.311c-0.723,0-1.312-0.588-1.312-1.311  c0-0.723,0.588-1.312,1.312-1.312c0.723,0,1.31,0.588,1.31,1.312C26.311,25.723,25.723,26.311,25,26.311z"
+   id="path3" />
+<g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="bg"><path
+     sodipodi:type="arc"
+     style="fill:#000000;fill-opacity:0.23391813000000000;stroke:none;opacity:0.49519231"
+     id="path2989"
+     sodipodi:cx="25.635593"
+     sodipodi:cy="25.635593"
+     sodipodi:rx="20.974577"
+     sodipodi:ry="19.067797"
+     d="m 46.61017,25.635593 a 20.974577,19.067797 0 1 1 -41.9491535,0 20.974577,19.067797 0 1 1 41.9491535,0 z"
+     transform="matrix(0.95353532,0,0,1.0488889,0.649122,-2.1322663)" /></g></svg>

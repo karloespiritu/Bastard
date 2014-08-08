@@ -187,9 +187,9 @@
 
 @charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+html { font-family: 'Open Sans'; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-body { margin: 0; }
+body { margin: 0; font-family: 'Open Sans' }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
@@ -3167,7 +3167,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 /* ========================================================================== 2. General - Setting up some base styles ========================================================================== */
 html { height: 100%; max-height: 100%; font-size: 62.5%; }
 
-body { height: 100%; max-height: 100%; font-family: 'Noto Serif', serif; font-size: 2.0rem; line-height: 1.6em; color: #848482; background-color: black; }
+body { color: white; height: 100%; max-height: 100%; font-family: 'Open Sans', serif; font-size: 2.0rem; line-height: 1.6em; color: #848482; background-color: white; }
 
 ::-moz-selection, ::selection { color: #222; background: #D6EDFF; text-shadow: none; }
 
@@ -3186,7 +3186,7 @@ h5 { font-size: 2.5rem; }
 h6 { font-size: 2rem; }
 
 a { color: #ffeb99; transition: color ease 0.3s; }
-a:hover { color: #caad00; }
+a:hover { color: #005B9A; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #50585D; }
 
@@ -3271,7 +3271,7 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 .navbar-toggle:focus, .navbar-toggle:active { outline: 0; }
 
 /* Main page scroll arrow styles */
-.btn-circle { width: 90px; height: 90px; border-radius: 60px; font-size: 40px; color: rgba(255, 255, 255, 0.6); -webkit-transition: background .4s ease-in-out; -moz-transition: background .4s ease-in-out; transition: background .4s ease-in-out; }
+.btn-circle { width: 90px; height: 90px; border-radius: 60px; font-size: 40px; color: rgba(255, 255, 255, 0.75); -webkit-transition: background .4s ease-in-out; -moz-transition: background .4s ease-in-out; transition: background .4s ease-in-out; }
 .btn-circle:hover, .btn-circle:focus { outline: 0; color: #fff; background: rgba(255, 255, 255, 0.1); }
 
 .page-scroll .btn-circle i.animated { -webkit-transition-property: -webkit-transform; -webkit-transition-duration: 1s; -moz-transition-property: -moz-transform; -moz-transition-duration: 1s; -webkit-animation-name: pulse; -moz-animation-name: pulse; -webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-timing-function: linear; }
@@ -3294,23 +3294,30 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo { text-decoration: none; }
-.blog-logo img { display: block; max-height: 100px; max-width: 350px; width: auto; margin: 0 auto; line-height: 0; }
+.blog-logo img { display: block; max-height: 300px; width: auto; margin: 2em auto; line-height: 0; }
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title { margin: 10px 0 10px 0; font-size: 5rem; letter-spacing: -1px; font-weight: bold; font-family: 'Open Sans', sans-serif; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); }
 
-.blog-description { margin: 0; font-size: 1.8rem; line-height: 1.5em; font-weight: 300; font-family: 'Noto Serif', serif; letter-spacing: 0; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+.blog-description { margin: 1em; font-size: 1.8rem; line-height: 1.5em; font-weight: 300; color: white; }
 
 /* Top ornament */
 .top-ornament { background: url(../images/top-ornament.svg) no-repeat top center; margin: 0 auto; position: relative; height: 59px; border-top: rgba(235, 242, 246, 0.29) 1px solid; }
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post { position: relative; width: 80%; max-width: 700px; margin: 4rem auto; padding-bottom: 4rem; word-break: break-word; hyphens: auto; }
-.post:after { position: absolute; bottom-margin: 10px; display: block; width: 100%; height: 70px; content: ""; background: url(../images/divider.svg) no-repeat; background-size: 700px 20px; background-position: center center; }
+.post:after {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
 
 /* Add a little circle in the middle of the border-bottom on our .post just for the lolz and stylepoints. */
-.post-title { color: #caad00; margin: 0; }
-.post-title a { text-decoration: none; color: #caad00; }
+.post-title {  margin: 0; }
+.post-title a { text-decoration: none;}
 
 .post-excerpt p { margin: 1.6rem 0 0 0; font-size: 0.9em; line-height: 1.6em; color: #828282; }
 
@@ -3333,11 +3340,11 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 .publish-date { display: block; font-size: 1.4rem; line-height: 1.5em; }
 
 /* ========================================================================== 6. Single Post - When you click on an individual post ========================================================================== */
-h1.post-title { color: #caad00; }
+h1.post-title { color: #005B9A; }
 
 /* Stop .full-img from creating horizontal scroll - slight hack due to imperfections with browser width % calculations and rounding */
 .post-template .content { overflow: hidden; }
-.post-template .post { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+.post-template .post { margin-top: 1em; border-bottom: none; padding-bottom: 0; }
 .post-template .post:after { display: none; }
 .post-template .post-header { padding: 60px 0; text-align: center; }
 .post-template .blog-title { display: inline-block; padding: 2.5rem 0; }
@@ -3419,7 +3426,7 @@ h1.post-title { color: #caad00; }
 .poweredby .icon-ghost:before { font-size: 1rem; margin-right: 0.2em; }
 
 /* The subscribe icon on the footer */
-.subscribe { width: 28px; height: 28px; position: absolute; top: -14px; left: 50%; margin-left: -15px; border: rgba(235, 242, 246, 0.29) 1px solid; text-align: center; line-height: 2.4rem; border-radius: 50px; background: black; transition: box-shadow 0.5s; }
+.subscribe { width: 28px; height: 28px; position: absolute; top: -14px; left: 50%; margin-left: -15px; text-align: center; line-height: 2.4rem; border-radius: 50px; background: black; transition: box-shadow 0.5s; }
 .subscribe:before { color: #666666; font-size: 10px; position: absolute; top: 9px; left: 9px; font-weight: bold; transition: color 0.5s ease; }
 .subscribe:hover { box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px; transition: box-shadow 0.25s; }
 .subscribe:hover:before { color: #50585D; }
@@ -3435,24 +3442,24 @@ h1.post-title { color: #caad00; }
 .subscribe:hover .tooltip { opacity: 1; top: -33px; }
 
 /* ========================================================================== 11. Social Links ========================================================================== */
-.btn-outline { margin-top: 15px; border: solid 1px #bbbbbb; font-size: 24px; color: #bbbbbb; background: 0 0; transition: all .3s ease-in-out; }
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active { border: solid 1px #bbbbbb; color: #000; background: #bbbbbb; }
+.btn-outline { margin-top: 15px; border: solid 1px white; font-size: 24px; color: white; background: 0 0; transition: all .3s ease-in-out; }
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active { border: solid 1px white; color: #000; background: #bbbbbb; }
 
-.btn-social { display: inline-block; width: 48px; height: 48px; border: 1px solid #bbbbbb; border-radius: 100%; text-align: center; font-size: 24px; line-height: 46px; }
+.btn-social { display: inline-block; width: 48px; height: 48px; border: 1px solid white; border-radius: 100%; text-align: center; font-size: 24px; line-height: 46px; }
 
 /* ========================================================================== 12. Slider Menu ========================================================================== */
-.site-nav-logo { position: fixed; left: 10px; top: 10px; width: 45px; height: 45px; background-color: rgba(0, 0, 0, 0.6); overflow: hidden; z-index: 99; }
+.site-nav-logo { position: fixed; left: 10px; top: 10px; width: 45px; height: 45px; background-color: rgba(255, 255,255, 0.6); border-radius: .5em; overflow: hidden; z-index: 99; }
 .site-nav-logo .logo { display: block; position: absolute; top: 5px; left: 5px; width: 35px; height: 35px; border-radius: 100%; background-size: cover; background-repeat: no-repeat; }
 
 #slidemenu-wrapper { margin-left: -250px; left: 0; width: 250px; background: #171717; position: fixed; height: 100%; overflow-y: auto; z-index: 1000; -webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -ms-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; transition: all 0.4s ease 0s; }
-#slidemenu-wrapper a { color: #848482; }
-#slidemenu-wrapper a:active, #slidemenu-wrapper a:focus { color: #caad00; }
-#slidemenu-wrapper a:hover { color: #caad00; background: #000000; }
+#slidemenu-wrapper a { color: white; }
+#slidemenu-wrapper a:active, #slidemenu-wrapper a:focus { color: #005B9A; }
+#slidemenu-wrapper a:hover { color: #005B9A; background: #000000; }
 
-.slidemenu-nav { color: #999999; position: absolute; top: 0; width: 250px; list-style: none; margin: 0; padding: 0; }
-.slidemenu-nav li { font-weight: 400; font-size: 14px; line-height: 35px; text-indent: 10px; }
+.slidemenu-nav { color: #999999; position: absolute; top: 0; width: 250px; list-style: none; margin: 0; padding: 1em; }
+.slidemenu-nav li { font-weight: 400; font-size: 14px; line-height: 35px; text-indent: 10px; padding: .5em; }
 .slidemenu-nav li a { color: #999999; display: block; text-decoration: none; }
-.slidemenu-nav li a:hover { color: #caad00; background: rgba(0, 0, 0, 0.9); text-decoration: none; }
+.slidemenu-nav li a:hover { color: #005B9A; background: rgba(0, 0, 0, 0.9); text-decoration: none; }
 .slidemenu-nav li a:active, .slidemenu-nav li a:focus { text-decoration: none; }
 .slidemenu-nav li a i { margin-right: 10px; }
 
@@ -3505,3 +3512,12 @@ h1.post-title { color: #caad00; }
   .site-footer { margin-top: 6rem; font-size: 0.7rem; }
   .btn-social { width: 32px; height: 32px; border: 1px solid #bbbbbb; font-size: 15px; line-height: 30px; } }
 /* ========================================================================== End of file. Media queries should be the last thing here. Do not add stuff below this point, or it will probably fuck everything up. ========================================================================== */
+
+hr.swaggy {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}

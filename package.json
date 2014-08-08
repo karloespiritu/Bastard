@@ -1,17 +1,17 @@
 {
-  "name": "Bastard",
-  "version": "1.1.4",
-  "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt",
+  "name": "Swaggy Bastard",
+  "version": "1.0",
+  "description": "A Boilerplate Theme for Ghost forked from Bastard",
   "author": {
-    "name": "Karlo Espiritu",
-    "email": "karloespiritu@gmail.com",
-    "url": "http://karloespiritu.com"
+    "name": "Gil",
+    "email": "gfgilly@gmail.com",
+    "url": "http://gferreira.me"
   },
-  "homepage": "https://github.com/karloespiritu/Bastard",
+  "homepage": "https://github.com/misterGF/SwaggyBastard",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karloespiritu/Bastard.git"
+    "url": "https://github.com/mistergf/Swaggy-Bastard.git"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
