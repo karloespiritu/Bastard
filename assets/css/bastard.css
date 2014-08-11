@@ -3167,7 +3167,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 /* ========================================================================== 2. General - Setting up some base styles ========================================================================== */
 html { height: 100%; max-height: 100%; font-size: 62.5%; }
 
-body { color: white; height: 100%; max-height: 100%; font-family: 'Open Sans', serif; font-size: 2.0rem; line-height: 1.6em; color: #848482; background-color: white; }
+body { color: white; height: 100%; max-height: 100%; font-family: 'Noto Serif', serif; font-size: 2.0rem; line-height: 1.6em; color: #848482; background-color: white; }
 
 ::-moz-selection, ::selection { color: #222; background: #D6EDFF; text-shadow: none; }
 
@@ -3185,7 +3185,7 @@ h5 { font-size: 2.5rem; }
 
 h6 { font-size: 2rem; }
 
-a { color: #ffeb99; transition: color ease 0.3s; }
+a { color: #428bca; transition: color ease 0.3s; }
 a:hover { color: #005B9A; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #50585D; }
@@ -3354,7 +3354,7 @@ h1.post-title { color: #005B9A; }
 /* Kill that stylish little circle that was on the border, too */
 /* Insert some mad padding up in the header for better spacing */
 /* Keep images centred and within the bounds of the post-width */
-.post-content { color: #848482; }
+.post-content { color: black; }
 .post-content img { display: block; max-width: 100%; height: auto; margin: 0 auto; padding: 0.6em 0; }
 .post-content .full-img { width: 126%; max-width: none; margin: 0 -13%; }
 .post-content code { color: #993030; }
@@ -3385,11 +3385,11 @@ h1.post-title { color: #005B9A; }
 /* Drop the share links in the space to the right. Doing it like this means it's easier for the author bio to be flexible at smaller screen sizes while the share links remain at a fixed width the whole time */
 /* ========================================================================== 7. Tag archive ========================================================================== */
 .archive-template .site-head, .tag-template .site-head { height: auto; padding-bottom: 5rem; }
-.archive-template .site-head a, .tag-template .site-head a { color: #848482; }
+.archive-template .site-head a, .tag-template .site-head a { color: white; }
 .archive-template .blog-logo, .tag-template .blog-logo { display: block; margin-top: 5rem; }
 
 .tag-archive-header { text-align: center; max-width: 700px; margin: 4rem auto; position: relative; }
-.tag-archive-header h1 { font-family: Georgia, Times, "Times New Roman", serif; letter-spacing: 0.1em; }
+.tag-archive-header h1 { text-transform:uppercase; letter-spacing: 0.1em; }
 .tag-archive-header:after { display: block; content: ""; height: 70px; bottom: -15px; background: url(../images/tag-divider.svg) no-repeat top center; background-size: 700px 20px; }
 
 .archive-template .blog-title { display: inline-block; padding: 2.5rem 0; }
