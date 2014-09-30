@@ -3305,7 +3305,7 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 .top-ornament { background: url(../images/top-ornament.svg) no-repeat top center; margin: 0 auto; position: relative; height: 59px; border-top: rgba(235, 242, 246, 0.29) 1px solid; }
 
 /* Every post, on every page, gets this style on its <article> tag */
-.post { position: relative; width: 80%; max-width: 700px; margin: 4rem auto; padding-bottom: 4rem; word-break: break-word; hyphens: auto; }
+.post { position: relative; width: 80%; max-width: 900px; margin: 4rem auto; padding-bottom: 4rem; word-break: break-word; hyphens: auto; }
 .post:after {
     border: 0;
     height: 1px;
@@ -3348,15 +3348,15 @@ h1.post-title { color: #005B9A; }
 .post-template .post:after { display: none; }
 .post-template .post-header { padding: 60px 0; text-align: center; }
 .post-template .blog-title { display: inline-block; padding: 2.5rem 0; }
-.post-template h2, .post-template h3, .post-template h4 { color: #bbbbbb; }
+.post-template h2, .post-template h3, .post-template h4 { color: #333; }
 
 /* Tweak the .post wrapper style */
 /* Kill that stylish little circle that was on the border, too */
 /* Insert some mad padding up in the header for better spacing */
 /* Keep images centred and within the bounds of the post-width */
-.post-content { color: black; }
+.post-content { color: #333; text-align: justify }
 .post-content img { display: block; max-width: 100%; height: auto; margin: 0 auto; padding: 0.6em 0; }
-.post-content .full-img { width: 126%; max-width: none; margin: 0 -13%; }
+.post-content .full-img { width: 100%; max-width: none; margin: 0 0; }
 .post-content code { color: #993030; }
 
 /* Break out larger images to be wider than the main text column the class is applied with jQuery */
@@ -3390,7 +3390,7 @@ h1.post-title { color: #005B9A; }
 
 .tag-archive-header { text-align: center; max-width: 700px; margin: 4rem auto; position: relative; }
 .tag-archive-header h1 { text-transform:uppercase; letter-spacing: 0.1em; }
-.tag-archive-header:after { display: block; content: ""; height: 70px; bottom: -15px; background: url(../images/tag-divider.svg) no-repeat top center; background-size: 700px 20px; }
+.tag-archive-header:after { display: block; content: ""; height: 70px; bottom: -15px; background: url(/assets/images/bow3.svg) no-repeat top center; }
 
 .archive-template .blog-title { display: inline-block; padding: 2.5rem 0; }
 
@@ -3521,3 +3521,12 @@ hr.swaggy {
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
+
+.circle { 
+display: inline !important;
+vertical-align: middle;
+margin: .2em;}
+
+.smallImage { width: 40px !important;}
+
+ul {  list-style-type: none; }
