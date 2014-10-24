@@ -840,7 +840,7 @@ abbr[title], abbr[data-original-title] { cursor: help; border-bottom: 1px dotted
 
 .initialism { font-size: 90%; text-transform: uppercase; }
 
-blockquote { padding: 10px 20px; margin: 0 0 20px; font-size: 17.5px; border-left: 5px solid #eeeeee; }
+blockquote { padding: 10px 20px; margin: 0 0 20px; border-left: 5px solid #eeeeee; }
 blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child { margin-bottom: 0; }
 blockquote footer, blockquote small, blockquote .small { display: block; font-size: 80%; line-height: 1.42857; color: #777777; }
 blockquote footer:before, blockquote small:before, blockquote .small:before { content: '\2014 \00A0'; }
@@ -3167,7 +3167,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 /* ========================================================================== 2. General - Setting up some base styles ========================================================================== */
 html { height: 100%; max-height: 100%; font-size: 62.5%; }
 
-body { color: white; height: 100%; max-height: 100%; font-family: 'Noto Serif', serif; font-size: 2.0rem; line-height: 1.6em; color: #848482; background-color: white; }
+body { color: white; height: 100%; max-height: 100%; font-family: 'Noto Serif', serif; font-size: 1.5rem; line-height: 1.6em; color: #848482; background-color: white; }
 
 ::-moz-selection, ::selection { color: #222; background: #D6EDFF; text-shadow: none; }
 
@@ -3203,7 +3203,7 @@ dl dd { margin-left: 200px; margin-bottom: 1em; }
 
 hr { display: block; height: 1px; border: 0; border-top: rgba(235, 242, 246, 0.29) 1px solid; margin: 3.2em 0; padding: 0; }
 
-blockquote { -moz-box-sizing: border-box; box-sizing: border-box; margin: 1.6em 0 1.6em -2.2em; padding: 0 0 0 1.6em; border-left: #4a4a4a 0.4em solid; }
+blockquote { -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 0 0 1.6em; border-left: #4a4a4a 0.4em solid; }
 blockquote p { margin: 0.8em 0; font-style: italic; }
 blockquote small { display: inline-block; margin: 0.8em 0 0.8em 1.5em; font-size: 0.9em; color: #ccc; }
 blockquote small:before { content: '\2014 \00A0'; }
@@ -3522,7 +3522,7 @@ hr.swaggy {
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
-.circle { 
+.circle {
 display: inline !important;
 vertical-align: middle;
 margin: .2em;}
