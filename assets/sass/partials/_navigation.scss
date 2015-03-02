@@ -77,7 +77,7 @@ navbar {
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;    
+    -moz-animation-timing-function: linear;
   }
   &:hover i.animated {
     -webkit-animation-name: pulse;
@@ -92,7 +92,7 @@ navbar {
 }
 
 @-webkit-keyframes pulse {
-  0 {
+  0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -108,7 +108,7 @@ navbar {
 
 
 @-moz-keyframes pulse {
-  0 {
+  0% {
     -moz-transform: scale(1);
     transform: scale(1);
   }
