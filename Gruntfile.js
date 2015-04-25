@@ -11,22 +11,21 @@ module.exports = function(grunt) {
 
     // JSHint JavaScript files
     jshint: {
-      files: ['Gruntfile.js', 
-              'package.json', 
+      files: ['Gruntfile.js',
+              'package.json',
               'assets/js/bastard.js']
     },
 
     // Compile Sass to CSS -  destination : source
     sass: {
-      compile: {
+      dist: {
         options: {
-          style: 'compact',
-          banner: '<%= banner %>'
+          style: 'compact'
         },
         files: {
           'assets/css/compiled_sass.css': 'assets/sass/style.scss'
         },
-      },     
+      },
     },
 
     // Concatenate all JavaScript & CSS files
@@ -40,19 +39,19 @@ module.exports = function(grunt) {
         src: ['assets/bower_components/bootstrap/dist/js/bootstrap.js',
               'assets/bower_components/highlightjs/highlight.pack.js',
               'assets/js/jquery.fitvids.js',
-              'assets/js/jquery.parallax-1.1.3.js', 
-              'assets/js/jquery.easing.1.3.js', 
+              'assets/js/jquery.parallax-1.1.3.js',
+              'assets/js/jquery.easing.1.3.js',
               'assets/js/bastard.js'],
 
         dest: 'assets/js/scripts.js'
       },
 
       css: {
-        src: ['assets/bower_components/highlightjs/styles/railscasts.css', 
+        src: ['assets/bower_components/highlightjs/styles/railscasts.css',
               'assets/css/compiled_sass.css'],
 
         dest: 'assets/css/bastard.css'
-      },      
+      },
     },
 
     autoprefixer: {
@@ -105,7 +104,7 @@ module.exports = function(grunt) {
           dest: 'assets/images/'
         }]
       }
-    },   
+    },
 
     /**
      * Compresses SVG files
@@ -150,7 +149,7 @@ module.exports = function(grunt) {
       svgmin: {
         files: ['image_sources/{,*/}*.svg','image_sources/{,*/}*.svg'],
         tasks: ['svgmin']
-      },      
+      },
     },
   });
 
@@ -167,13 +166,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default tasks
-  grunt.registerTask('default', 
-    [ 'jshint', 
+  grunt.registerTask('default',
+    [ 'jshint',
       'sass',
       'concat',
       'cssmin',
-      'uglify', 
-      'imagemin', 
+      'uglify',
+      'imagemin',
       'svgmin'
     ]
   );

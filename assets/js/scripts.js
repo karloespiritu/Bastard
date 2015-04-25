@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.4 - 2015-03-02
+/*! Bastard - v1.1.6 - 2015-04-25
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
