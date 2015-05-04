@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.6 - 2015-04-25
+/*! Bastard - v1.1.7 - 2015-05-05
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
@@ -2536,6 +2536,35 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 
 .publish-date { display: block; font-size: 1.4rem; line-height: 1.5em; }
 
+/* Big cover image on the home page */
+.main-header { position: relative; display: table; width: 100%; height: 100vh; margin-bottom: 5rem; text-align: center; background: #222 no-repeat center center; background-size: cover; overflow: hidden; }
+
+.main-header .inner { width: 80%; }
+
+.main-nav { position: relative; padding: 35px 40px; margin: 0 0 30px 0; }
+
+.main-nav a { text-decoration: none; font-family: 'Open Sans', sans-serif; }
+
+/* Special styles when overlaid on an image*/
+.main-nav.overlay { position: absolute; top: 0; left: 0; right: 0; height: 70px; border: none; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%); }
+
+.no-cover .main-nav.overlay { background: none; }
+
+.post-head.main-header { height: 65vh; min-height: 180px; }
+
+/* Hide when there's no cover image or on page2+ */
+.no-cover .scroll-down, .no-cover.main-header:after, .archive-template .scroll-down, .archive-template .main-header:after { display: none; }
+
+.no-cover.main-header { min-height: 160px; max-height: 40vh; background: #000; }
+
+.no-cover .page-title { color: rgba(0, 0, 0, 0.8); }
+
+.no-cover .page-description { color: rgba(0, 0, 0, 0.5); }
+
+.post-head.main-header { height: 65vh; min-height: 180px; }
+
+.no-cover.post-head.main-header { height: 85px; min-height: 0; margin-bottom: 0; background: transparent; }
+
 /* ========================================================================== 6. Single Post - When you click on an individual post ========================================================================== */
 h1.post-title { color: #caad00; }
 
@@ -2623,7 +2652,7 @@ h1.post-title { color: #caad00; }
 .poweredby .icon-ghost:before { font-size: 1rem; margin-right: 0.2em; }
 
 /* The subscribe icon on the footer */
-.subscribe { width: 28px; height: 28px; position: absolute; top: -14px; left: 50%; margin-left: -15px; border: rgba(235, 242, 246, 0.29) 1px solid; text-align: center; line-height: 2.4rem; border-radius: 50px; background: #000000; transition: box-shadow 0.5s; }
+.subscribe { width: 28px; height: 28px; position: absolute; top: -14px; left: 50%; margin-left: -15px; border: #444648 1px solid; text-align: center; line-height: 2.4rem; border-radius: 50px; background: #000000; transition: box-shadow 0.5s; }
 .subscribe:before { color: #666666; font-size: 10px; position: absolute; top: 9px; left: 9px; font-weight: bold; transition: color 0.5s ease; }
 .subscribe:hover { box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px; transition: box-shadow 0.25s; }
 .subscribe:hover:before { color: #50585D; }
