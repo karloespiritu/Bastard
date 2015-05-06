@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.7 - 2015-05-05
+/*! Bastard - v1.1.8 - 2015-05-06
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
@@ -2506,7 +2506,7 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 .blog-description { margin: 0; font-size: 1.8rem; line-height: 1.5em; font-weight: 300; font-family: 'Noto Serif', serif; letter-spacing: 0; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
 
 /* Top ornament */
-.top-ornament { background: url(../images/top-ornament.svg) no-repeat top center; margin: 0 auto; position: relative; height: 59px; border-top: rgba(235, 242, 246, 0.29) 1px solid; }
+.top-ornament { background: url(../images/top-ornament.svg) no-repeat top center; margin: 0px auto 30px; position: relative; height: 59px; border-top: rgba(235, 242, 246, 0.29) 1px solid; }
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post { position: relative; width: 80%; max-width: 700px; margin: 4rem auto; padding-bottom: 4rem; word-break: break-word; hyphens: auto; }
@@ -2537,7 +2537,7 @@ navbar { margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); te
 .publish-date { display: block; font-size: 1.4rem; line-height: 1.5em; }
 
 /* Big cover image on the home page */
-.main-header { position: relative; display: table; width: 100%; height: 100vh; margin-bottom: 5rem; text-align: center; background: #222 no-repeat center center; background-size: cover; overflow: hidden; }
+.main-header { position: relative; display: table; width: 100%; height: 100vh; /*margin-bottom: 5rem;*/ text-align: center; background: #222 no-repeat center center; background-size: cover; overflow: hidden; }
 
 .main-header .inner { width: 80%; }
 
