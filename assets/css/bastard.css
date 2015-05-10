@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.8 - 2015-05-06
+/*! Bastard - v1.1.8 - 2015-05-10
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
@@ -2351,7 +2351,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { .hidden-print { display: none !important; } }
 /* ========================================================================== Table of Contents ========================================================================== */
-/* 0.  Theme colors 1.  Icons 2.  General 3.  Utilities 4.  Navigation 5.  General 6.  Single Post 7.  Tag Archive 8.  Third Party Elements 9.  Pagination 10. Footer 11. Social 12. Slider Menu 13. Media Queries */
+/* 0.  Theme colors 1.  Icons 2.  General 3.  Utilities 4.  Navigation 5.  General 6.  Single Post 7.  Tag Archive 8.  Third Party Elements 9.  Pagination 10. Footer 11. Social 12. Slider Menu 13. Media Queries 14. Animations */
 /* ========================================================================== Theme colors ========================================================================== */
 /* ========================================================================== 1. Icons - Sets up the icon font and respective classes ========================================================================== */
 /* Import the font file with the icons in it */
@@ -2738,5 +2738,27 @@ h1.post-title { color: #caad00; }
   .site-footer { margin-top: 6rem; font-size: 0.7rem; }
   .btn-social { width: 32px; height: 32px; border: 1px solid #bbbbbb; font-size: 15px; line-height: 30px; } }
 /* ========================================================================== End of file. Media queries should be the last thing here. Do not add stuff below this point, or it will probably fuck everything up. ========================================================================== */
+/* ========================================================================== 14.  Animations Add subtle load-in animation for content on the home page ========================================================================== */
+.blog-logo img { -webkit-animation: fade-in-down 0.6s; animation: fade-in-down 0.6s; -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+
+/* if no logo, animate the blog title */
+.blog-title { -webkit-animation: fade-in-down 0.6s; animation: fade-in-down 0.6s; -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+
+.blog-description { -webkit-animation: fade-in-down 0.9s; animation: fade-in-down 0.9s; -webkit-animation-delay: 0.1s; animation-delay: 0.1s; }
+
+.social-links { -webkit-animation: fade-in-down 0.9s; animation: fade-in-down 0.9s; -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+
+/* Used to fade in title/desc on the home page */
+@-webkit-keyframes fade-in-down { 0% { opacity: 0; -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); } }
+@keyframes fade-in-down { 0% { opacity: 0; -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); } }
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce { 0%, 10%, 25%, 40%, 50% { -webkit-transform: translateY(0) rotate(-90deg); transform: translateY(0) rotate(-90deg); }
+  20% { -webkit-transform: translateY(-10px) rotate(-90deg); transform: translateY(-10px) rotate(-90deg); }
+  30% { -webkit-transform: translateY(-5px) rotate(-90deg); transform: translateY(-5px) rotate(-90deg); } }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0) rotate(-90deg); transform: translateY(0) rotate(-90deg); }
+  40% { -webkit-transform: translateY(-10px) rotate(-90deg); transform: translateY(-10px) rotate(-90deg); }
+  60% { -webkit-transform: translateY(-5px) rotate(-90deg); transform: translateY(-5px) rotate(-90deg); } }
 
 /*# sourceMappingURL=compiled_sass.css.map */
