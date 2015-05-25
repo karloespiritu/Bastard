@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.9 - 2015-05-24
+/*! Bastard - v1.1.9 - 2015-05-25
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
@@ -2447,6 +2447,9 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
+/*Buttons */
+.btn { display: inline-block; padding: .25rem 1rem; color: #caad00; background-color: #000000; border: 0.2rem solid #848482; border-radius: .1rem; }
+
 /* ========================================================================== 3. Utilities - These things get used a lot ========================================================================== */
 /* Clears shit */
 .clearfix { *zoom: 1; }
