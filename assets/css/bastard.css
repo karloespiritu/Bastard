@@ -1,4 +1,4 @@
-/*! Bastard - v1.1.9 - 2015-05-25
+/*! Bastard - v1.1.9 - 2015-05-26
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
@@ -2714,7 +2714,9 @@ h1.post-title { color: #caad00; }
   h3 { font-size: 3.3rem; }
   h4 { font-size: 2.8rem; }
   .site-footer { margin-top: 5rem; font-size: 0.9rem; }
-  .btn-social { width: 38px; height: 38px; border: 1px solid #bbbbbb; font-size: 18px; line-height: 38px; } }
+  .btn-social { width: 38px; height: 38px; border: 1px solid #bbbbbb; font-size: 18px; line-height: 38px; }
+  /* increase size of scroll-to-top btn for smaller screens*/
+  a#scroll-to-top { font-size: 1.1rem; margin-right: 20px; margin-top: 15px; } }
 /* ========================================================================== Media Queries - Smaller than 500px ========================================================================== */
 @media only screen and (max-width: 500px) { .site-nav-logo { position: relative; }
   .blog-logo img { max-height: 80px; max-width: 210px; }
