@@ -280,12 +280,21 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
 
-/*Buttons */
-.btn {
+/* Buttons */
+.btn-custom {
+  font-size: 2.0rem !important;
   display: inline-block;
-  padding: .25rem 1rem;
+  padding: .5rem 1rem;
   color: $yellow-dark;
   background-color: $dark-black;
-  border: .2rem solid $gray-medium;
+  border: .2rem solid $gray-dark;
   border-radius: .1rem;
+  margin: 0.5rem !important;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #26282d;
+  background-color: $yellow-dark;
+  border-color: $yellow-dark;
 }
