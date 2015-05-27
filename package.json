@@ -35,6 +35,5 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.18.1",
     "grunt-svgmin": "^2.0.1"
-  },
-  "license": "MIT"
+  }
 }

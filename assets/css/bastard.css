@@ -1,20 +1,21 @@
-/*! Bastard - v1.1.9 - 2015-05-26
+/*! Bastard - v1.1.10 - 2015-05-27
 * https://github.com/karloespiritu/Bastard
 * Copyright (c) 2015 Karlo Espiritu - MIT License
 */
 
 .hljs {
   display: block;
+  overflow-x: auto;
   padding: 0.5em;
   background: #232323;
-  color: #E6E1DC;
+  color: #e6e1dc;
+  -webkit-text-size-adjust: none;
 }
 
 .hljs-comment,
-.hljs-template_comment,
 .hljs-javadoc,
 .hljs-shebang {
-  color: #BC9458;
+  color: #bc9458;
   font-style: italic;
 }
 
@@ -25,7 +26,7 @@
 .nginx .hljs-title,
 .method,
 .hljs-list .hljs-title {
-  color: #C26230;
+  color: #c26230;
 }
 
 .hljs-string,
@@ -38,12 +39,13 @@
 .apache .hljs-cbracket,
 .hljs-date,
 .tex .hljs-command,
+.asciidoc .hljs-link_label,
 .markdown .hljs-link_label {
-  color: #A5C261;
+  color: #a5c261;
 }
 
 .hljs-subst {
-  color: #519F50;
+  color: #519f50;
 }
 
 .hljs-tag,
@@ -53,24 +55,26 @@
 .hljs-sub .hljs-identifier,
 .hljs-pi,
 .input_number {
-  color: #E8BF6A;
+  color: #e8bf6a;
 }
 
 .hljs-identifier {
-  color: #D0D0FF;
+  color: #d0d0ff;
 }
 
 .hljs-class .hljs-title,
-.haskell .hljs-type,
+.hljs-type,
 .smalltalk .hljs-class,
 .hljs-javadoctag,
 .hljs-yardoctag,
-.hljs-phpdoc {
+.hljs-phpdoc,
+.hljs-dartdoc {
   text-decoration: none;
 }
 
-.hljs-constant {
-  color: #DA4939;
+.hljs-constant,
+.hljs-name {
+  color: #da4939;
 }
 
 
@@ -78,11 +82,13 @@
 .hljs-built_in,
 .ruby .hljs-symbol .hljs-string,
 .ruby .hljs-symbol .hljs-identifier,
+.asciidoc .hljs-link_url,
 .markdown .hljs-link_url,
 .hljs-attribute {
-  color: #6D9CBE;
+  color: #6d9cbe;
 }
 
+.asciidoc .hljs-link_url,
 .markdown .hljs-link_url {
   text-decoration: underline;
 }
@@ -92,80 +98,80 @@
 .hljs-params,
 .hljs-variable,
 .clojure .hljs-attribute {
-  color: #D0D0FF;
+  color: #d0d0ff;
 }
 
 .css .hljs-tag,
-.hljs-rules .hljs-property,
+.hljs-rule .hljs-property,
 .hljs-pseudo,
 .tex .hljs-special {
-  color: #CDA869;
+  color: #cda869;
 }
 
 .css .hljs-class {
-  color: #9B703F;
+  color: #9b703f;
 }
 
-.hljs-rules .hljs-keyword {
-  color: #C5AF75;
+.hljs-rule .hljs-keyword {
+  color: #c5af75;
 }
 
-.hljs-rules .hljs-value {
-  color: #CF6A4C;
+.hljs-rule .hljs-value {
+  color: #cf6a4c;
 }
 
 .css .hljs-id {
-  color: #8B98AB;
+  color: #8b98ab;
 }
 
 .hljs-annotation,
 .apache .hljs-sqbracket,
 .nginx .hljs-built_in {
-  color: #9B859D;
+  color: #9b859d;
 }
 
 .hljs-preprocessor,
 .hljs-preprocessor *,
 .hljs-pragma {
-  color: #8996A8 !important;
+  color: #8996a8 !important;
 }
 
 .hljs-hexcolor,
 .css .hljs-value .hljs-number {
-  color: #A5C261;
+  color: #a5c261;
 }
 
 .hljs-title,
 .hljs-decorator,
 .css .hljs-function {
-  color: #FFC66D;
+  color: #ffc66d;
 }
 
 .diff .hljs-header,
 .hljs-chunk {
-  background-color: #2F33AB;
-  color: #E6E1DC;
+  background-color: #2f33ab;
+  color: #e6e1dc;
   display: inline-block;
   width: 100%;
 }
 
 .diff .hljs-change {
-  background-color: #4A410D;
-  color: #F8F8F8;
+  background-color: #4a410d;
+  color: #f8f8f8;
   display: inline-block;
   width: 100%;
 }
 
 .hljs-addition {
   background-color: #144212;
-  color: #E6E1DC;
+  color: #e6e1dc;
   display: inline-block;
   width: 100%;
 }
 
 .hljs-deletion {
   background-color: #600;
-  color: #E6E1DC;
+  color: #e6e1dc;
   display: inline-block;
   width: 100%;
 }
