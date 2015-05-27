@@ -13,6 +13,15 @@
     "type": "git",
     "url": "https://github.com/karloespiritu/Bastard.git"
   },
+  "keywords": [
+    "ghost",
+    "theme",
+    "bastard",
+    "black",
+    "dark",
+    "boilerplate",
+    "bootstrap"
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^3.0.0",
@@ -26,5 +35,6 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.18.1",
     "grunt-svgmin": "^2.0.1"
-  }
+  },
+  "license": "MIT"
 }
