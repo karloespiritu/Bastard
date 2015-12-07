@@ -4,7 +4,7 @@ Bastard Theme for Ghost
 
 A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform.
 
-Bastard theme was built using [Bootstrap 3](http://getbootstrap.com/), [SASS](http://sass-lang.com), [Font Awesome](http://fortawesome.github.io/Font-Awesome/), [Bower](http://bower.io/), and [Grunt](http://gruntjs.com/). Grunt is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the `bastard.js` and `/assets/sass/*.scss` files.
+Bastard theme was built using [Bootstrap 3](http://getbootstrap.com/), [SASS](http://sass-lang.com), [Font Awesome](http://fortawesome.github.io/Font-Awesome/), [Bower](http://bower.io/), and [Gulp](http://gulpjs.com/). Gulp is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the `bastard.js` and `/assets/sass/*.scss` files.
 
 ![Bastard](http://f.cl.ly/items/3f2X3p2K2A1E1z263k2K/bastard-sample2.png)
 
@@ -19,7 +19,7 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 ## Theme Features
 
 * Clean and well-documented code
-* Developed using Bootstrap 3.3, SASS, Font Awesome, Grunt, and Bower
+* Developed using Bootstrap 3.3, SASS, Font Awesome, Gulp, and Bower
 * Organized CSS3 stylesheets using [SASS](http://sass-lang.com)
 * Fully responsive layout
 * Full bleed cover images for posts
@@ -27,7 +27,7 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 * Full screen cover page with parallax effect
 * Syntax highlighting using [HighlightJs](http://highlightjs.org)
 * One file css/js for performance optimization
-* Automatic linting, compiling, and minification of SCSS and JS files using Grunt
+* Automatic linting, compiling, and minification of SCSS and JS files using Gulp
 * Automatic image file size optimization using IMGMin and SVGMin
 * Easily update theme dependencies using Bower package manager
 * Google Analytics integrated
@@ -43,16 +43,16 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 
 ## Customising Bastard Theme
 
-Bastard theme uses Grunt to lint, compile, and concatenate the javascript and [SASS](http://sass-lang.com/) components. Customize the theme by editing the `assets/js/bastard.js` and `sass/*` files. Run `grunt` to compile your changes or use the `grunt watch` while you build your own theme.
+Bastard theme uses Gulp to lint, compile, and concatenate the javascript and [SASS](http://sass-lang.com/) components. Customize the theme by editing the `assets/js/bastard.js` and `sass/*` files. Run `gulp` to compile your changes or use the `gulp watch` while you build your own theme.
 
-1. Make sure you have [Node.js](http://nodejs.org), [Bower](http://bower.io) and [Grunt](gruntjs.com) installed on your system.
+1. Make sure you have [Node.js](http://nodejs.org), [Bower](http://bower.io) and [Gulp](gulpjs.com) installed on your system.
 2. Copy theme folder to Ghost themes directory `/content/themes`. Open your terminal and make the theme's folder your current working directory.
 3. Run `bower install` to install package dependencies.
-4. Run `npm install` to install Grunt components.
+4. Run `npm install` to install Gulp components.
 5. Restart Ghost and switch the theme to use `Bastard` in the Ghost's Settings.
 7. Make your changes by updating `/sass/*`, `/assets/*`, and `*.hbs` files of the theme.
-6. Run `grunt watch` to start watching for file changes or run `grunt` to build your latest changes.
-7. If you have new images for the theme, just place them inside `image_sources` folder and Grunt will handle the optimisation automatically and store the optimized version inside `assets/images/`.
+6. Run `gulp watch` to start watching for file changes or run `gulp` to build your latest changes.
+7. If you have new images for the theme, just place them inside `image_sources` folder and Gulp will handle the optimisation automatically and store the optimised version inside `assets/images/`.
 8. Update the social media icon links by updating `partials/social.hbs`.
 9. Update gravatar by updating URL in `partials/gravatar.hbs`.
 
@@ -60,7 +60,7 @@ Bastard theme uses Grunt to lint, compile, and concatenate the javascript and [S
 
 - [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
 - [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/)
-- [Grunt: The JavaScript Task Runner](http://gruntjs.com)
+- [Gulp: The Streaming Build System](http://gulpjs.com)
 - [Bower: A package manager for the web](http://bower.io)
 - [Sass - Syntactically Awesome Stylesheets](http://sass-lang.com/)
 - [HighlightJs - Syntax highlighting for the Web](http://highlightjs.org)
