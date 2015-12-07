@@ -1,6 +1,6 @@
 {
   "name": "Bastard",
-  "version": "1.1.10",
+  "version": "1.2.0",
   "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt",
   "author": {
     "name": "Karlo Espiritu",
@@ -23,17 +23,23 @@
     "bootstrap"
   ],
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^3.0.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-cssmin": "^0.12.2",
-    "grunt-contrib-imagemin": "^0.9.4",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^0.18.1",
-    "grunt-svgmin": "^2.0.1"
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.8.0",
+    "run-sequence": "^1.1.5"
   }
 }
