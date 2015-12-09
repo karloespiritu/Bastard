@@ -12,7 +12,6 @@ var svgmin = require('gulp-svgmin');
 var header = require('gulp-header');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
-var notify = require('gulp-notify');
 var cache = require('gulp-cache');
 var runsequence = require('run-sequence');
 var del = require('del');
