@@ -115,7 +115,7 @@ gulp.task('svgmin', function() {
 });
 
 // Watch Files For Changes
-gulp.task('watch', function() {
+gulp.task('watch', ['default'], function() {
     gulp.watch(files.lint, ['scripts']);
     gulp.watch(files.sass, ['css']);
 });
