@@ -117,11 +117,6 @@
 
 @media only screen and (max-width: 500px) {
 
-  .main-header {
-    margin-bottom: 15px;
-    height: 40vh;
-  }
-
   .no-cover.main-header {
     height: 30vh;
   }
@@ -240,7 +235,7 @@
     .author {
       margin: 0 0 2rem 0;
       padding: 0 0 1.6rem 0;
-      border-bottom: #EBF2F6 1px dashed;
+      border-bottom: $gray-darker 1px solid;
     }
     .share {
       position: static;
@@ -267,7 +262,6 @@
   }
   .read-next {
     margin-top: 2rem;
-    margin-bottom: -37px;
     .post {
       width: 100%;
     }

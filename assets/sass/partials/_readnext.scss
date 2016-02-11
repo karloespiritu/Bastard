@@ -31,6 +31,7 @@
   background: #222 no-repeat center center;
   background-size: cover;
   overflow: hidden;
+
   &:hover {
     text-decoration: none;
     &:before {
@@ -39,7 +40,7 @@
     }
     .post:before {
       color: #222;
-      background: $yellow-dark;
+      background: $gray-light;
       transition: all 0.2s ease;
     }
   }
@@ -63,9 +64,9 @@
       text-transform: uppercase;
       font-size: 1.1rem;
       font-family: "Open Sans", sans-serif;
-      color: rgba(255, 255, 255, 0.8);
-      border: rgba(255, 255, 255, 0.5) 1px solid;
-      border-radius: 4px;
+      color: $gray-light;
+      border: $gray-darker 1px solid;
+      border-radius: 0px;
       transition: all 0.5s ease;
     }
   }
