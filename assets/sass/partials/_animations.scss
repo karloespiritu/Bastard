@@ -1,5 +1,5 @@
 /* ==========================================================================
-  14.  Animations
+  15.  Animations
        Add subtle load-in animation for content on the home page
    ========================================================================== */
 .blog-logo img {
@@ -97,3 +97,8 @@
     transform: translateY(-5px) rotate(-90deg);
   }
 }
+
+/* ==========================================================================
+   End of file. Animations should be the last thing here. Do not add stuff
+   below this point, or it will probably fuck everything up.
+   ========================================================================== */

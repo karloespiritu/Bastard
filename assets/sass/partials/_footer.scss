@@ -1,10 +1,10 @@
 /* ==========================================================================
-   10. Footer - The bottom of every page
+   11. Footer - The bottom of every page
    ========================================================================== */
 
 .site-footer {
   position: relative;
-  margin: 8rem 0 0 0;
+  margin: 0;
   padding: 4rem 0;
   border-top: rgba(235, 242, 246, 0.29) 1px solid;
   font-family: 'Open Sans', sans-serif;
@@ -14,6 +14,7 @@
   text-align: center;
   background: $dark-black;
   a {
+    z-index: 999;
     color: #BBC7CC;
     text-decoration: underline;
     &:hover {

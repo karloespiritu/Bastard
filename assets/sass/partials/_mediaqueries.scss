@@ -1,5 +1,5 @@
   /* ==========================================================================
-   13. Media Queries - Smaller than 900px
+   14. Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
@@ -26,9 +26,20 @@
     max-height: 90px;
     max-width: 320px;
   }
+  .page-title {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .page-description {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
   .post {
     font-size: 0.9em;
-    line-height: 1.6em;
+  }
+  body:not(.post-template) .post-title {
+    font-size: 3.2rem;
   }
   .post-template {
     .post {
@@ -38,18 +49,48 @@
       padding: 40px 0;
     }
   }
+  ol, ul {
+      padding-left: 2em;
+  }
   h1 {
-    font-size: 4.8rem;
-    text-indent: -2px;
+      font-size: 4.5rem;
+      text-indent: -2px;
   }
+
   h2 {
-    font-size: 3.8rem;
+      font-size: 3.6rem;
   }
+
   h3 {
-    font-size: 3.3rem;
+      font-size: 3.1rem;
   }
+
   h4 {
-    font-size: 2.8rem;
+      font-size: 2.5rem;
+  }
+
+  h5 {
+      font-size: 2.2rem;
+  }
+
+  h6 {
+      font-size: 1.8rem;
+  }
+  .read-next {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 4rem;
+    p {
+      display: none;
+    }
+  }
+
+  .read-next-story.no-cover + .read-next-story.no-cover {
+    border-top: rgba(0, 0, 100, 0.06) 1px solid;
+    border-left: none;
   }
   .site-footer {
     margin-top: 5rem;
@@ -76,6 +117,15 @@
 
 @media only screen and (max-width: 500px) {
 
+  .main-header {
+    margin-bottom: 15px;
+    height: 40vh;
+  }
+
+  .no-cover.main-header {
+    height: 30vh;
+  }
+
   .site-nav-logo {
     position: relative;
   }
@@ -89,13 +139,33 @@
     margin-left: 16px;
     margin-right: 16px;
   }
+
   .post {
     width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 16px;
     margin-right: 16px;
-    font-size: 0.8em;
-    line-height: 1.6em;
+    padding-bottom: 2rem;
+    line-height: 1.65em;
   }
+
+  .post-date {
+    display: none;
+  }
+
+  .post-template {
+    .post-header {
+      margin-bottom: 2rem;
+    }
+    .post-date {
+      display: inline-block;
+    }
+  }
+  hr {
+    margin: 1.75em 0;
+  }
+
   .site-head {
     padding: 10% 0;
     height: 100%;
@@ -106,16 +176,33 @@
   .blog-description {
     font-size: 1.5rem;
   }
-  h1, h2 {
-    font-size: 3rem;
-    line-height: 1.1em;
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.3em 0;
+  }
+
+  h1 {
+    font-size: 2.8rem;
     letter-spacing: -1px;
   }
-  h3 {
-    font-size: 2.8rem;
+
+  h2 {
+    font-size: 2.4rem;
+    letter-spacing: 0;
   }
+
+  h3 {
+    font-size: 2.1rem;
+  }
+
   h4 {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
+  }
+
+  h5, h6 {
+    font-size: 1.8rem;
+  }
+  body:not(.post-template) .post-title {
+    font-size: 2.5rem;
   }
   .post-template {
     .post {
@@ -178,6 +265,13 @@
   .page-number {
     display: block;
   }
+  .read-next {
+    margin-top: 2rem;
+    margin-bottom: -37px;
+    .post {
+      width: 100%;
+    }
+  }
   .site-footer {
     margin-top: 6rem;
     font-size: 0.7rem;
@@ -189,6 +283,10 @@
     font-size: 15px;
     line-height: 30px;
   }
+  .subscribe {
+    display: none;
+  }
+
 }
 
 /* ==========================================================================

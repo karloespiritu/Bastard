@@ -13,14 +13,15 @@
     4.  Navigation
     5.  General
     6.  Single Post
-    7.  Tag Archive
-    8.  Third Party Elements
-    9.  Pagination
-    10. Footer
-    11. Social
-    12. Slider Menu
-    13. Media Queries
-    14. Animations
+    7.  Read Next
+    8.  Tag Archive
+    9.  Third Party Elements
+    10.  Pagination
+    11. Footer
+    12. Social
+    13. Slider Menu
+    14. Media Queries
+    15. Animations
  */
 
 @import "partials/colors";
@@ -30,6 +31,7 @@
 @import "partials/navigation";
 @import "partials/general";
 @import "partials/singlepost";
+@import "partials/readnext";
 @import "partials/tagarchive";
 @import "partials/thirdparty";
 @import "partials/pagination";

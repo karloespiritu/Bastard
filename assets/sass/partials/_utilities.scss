@@ -14,7 +14,7 @@
     display: table;
     clear: both;
   }
-  *zoom: 1;
+  zoom: 1;
 }
 
 /* Hides shit */
@@ -30,7 +30,7 @@
 .inner {
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 710px;
   margin: 0 auto;
 }
 
@@ -39,4 +39,14 @@
 .vertical {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* Wraps the main content & footer */
+
+.site-wrapper {
+  position: relative;
+  z-index: 10;
+  min-height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
 }

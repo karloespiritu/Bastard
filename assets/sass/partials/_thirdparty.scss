@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   8. Third Party Elements - Embeds from other services
+   9. Third Party Elements - Embeds from other services
    ========================================================================== */
 
 /* Github */
@@ -9,9 +9,18 @@
   table {
     margin: 0;
     font-size: 1.4rem;
+    text-rendering: auto;
+  }
+  td {
+    line-height: 1.4;
   }
   .line-number {
     min-width: 25px;
-    font-size: 1.1rem;
   }
+}
+
+/* Pastebin */
+
+.content .embedPastebin {
+  margin-bottom: 1.75em;
 }
