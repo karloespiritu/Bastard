@@ -59,9 +59,7 @@
         </footer>
 
     </article>
-
-</main>
-<aside class="read-next">
+<div class="read-next">
     {{#next_post}}
     <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
@@ -78,6 +76,8 @@
         </section>
     </a>
     {{/prev_post}}
-</aside>
+</div>
+</main>
+
 
 {{/post}}
