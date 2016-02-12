@@ -76,6 +76,8 @@ gulp.task('compile_sass', function() {
 gulp.task('concat_css', function() {
     return gulp.src(files.css)
         .pipe(concat('bastard.css'))
+        .pipe(header(banner, { pkg : pkg }))
+        .pipe(gulp.dest('assets/css'))
         .pipe(minifycss({keepSpecialComments: 0}))
         .pipe(rename({suffix: '.min'}))
         .pipe(header(banner, { pkg : pkg }))
@@ -92,6 +94,7 @@ gulp.task('css', function() {
 gulp.task('scripts', function() {
     return gulp.src(files.js)
         .pipe(concat('scripts.js'))
+        .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())

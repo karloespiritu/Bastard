@@ -1,7 +1,7 @@
 {
   "name": "Bastard",
   "version": "1.2.2",
-  "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Gulp",
+  "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap, Font Awesome Icons, SASS, Bower, and Gulp",
   "author": {
     "name": "Karlo Espiritu",
     "email": "karloespiritu@gmail.com",

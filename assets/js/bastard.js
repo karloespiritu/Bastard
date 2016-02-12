@@ -1,5 +1,5 @@
 /**
- *  Bastard - v1.0.0 - Main JavaScript file
+ *  Bastard - Main JavaScript file
  */
 /**
  * Main JS file for Bastard theme, behaviours

@@ -1,3 +1,11 @@
+/**
+ * Bastard - A Boilerplate Theme for Ghost using Twitter Bootstrap, Font Awesome Icons, SASS, Bower, and Gulp
+ * @version v1.2.2
+ * @homepage https://github.com/karloespiritu/Bastard
+ * @copyright 2016 Karlo Espiritu 
+ * @license MIT
+ */
+
 /*! highlight.js v9.1.0 | BSD3 License | git.io/hljslicense */
 (function(factory) {
 
@@ -14798,7 +14806,7 @@ jQuery.extend( jQuery.easing,
  *
  */
 /**
- *  Bastard - v1.0.0 - Main JavaScript file
+ *  Bastard - Main JavaScript file
  */
 /**
  * Main JS file for Bastard theme, behaviours
