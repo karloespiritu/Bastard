@@ -7167,7 +7167,7 @@ h1.post-title {
   font-family: "Open Sans", sans-serif;
   color: #bbbbbb;
   border: #666666 1px solid;
-  border-radius: 0px;
+  border-radius: 30px;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease; }
 
@@ -7642,7 +7642,6 @@ h1.post-title {
     margin-bottom: 2rem;
     margin-left: 16px;
     margin-right: 16px;
-    padding-bottom: 2rem;
     line-height: 1.65em; }
   .post-date {
     display: none; }
