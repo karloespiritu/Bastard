@@ -6499,9 +6499,9 @@ code, tt {
 pre {
   box-sizing: border-box;
   margin: 1.6em 0;
-  border: 1px solid #666666;
+  border: 1px solid #171717;
   width: 100%;
-  padding: 2px;
+  padding: 1px;
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.9em;
   white-space: pre;
