@@ -20,8 +20,10 @@
     11. Footer
     12. Social
     13. Slider Menu
-    14. Media Queries
-    15. Animations
+    14. Scrollbars
+    15. HighlightJs
+    16. Media Queries
+    17. Animations
  */
 
 @import "partials/colors";
@@ -38,5 +40,7 @@
 @import "partials/footer";
 @import "partials/social";
 @import "partials/slidemenu";
+@import "partials/scrollbars";
+@import "partials/highlight";
 @import "partials/mediaqueries";
 @import "partials/animations";

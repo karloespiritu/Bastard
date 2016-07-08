@@ -1,6 +1,6 @@
 /**
  * Bastard - A Boilerplate Theme for Ghost using Twitter Bootstrap, Font Awesome Icons, SASS, Bower, and Gulp
- * @version v1.2.3
+ * @version v1.3.0
  * @homepage https://github.com/karloespiritu/Bastard
  * @copyright 2016 Karlo Espiritu 
  * @license MIT
@@ -6292,8 +6292,10 @@ button.close {
     11. Footer
     12. Social
     13. Slider Menu
-    14. Media Queries
-    15. Animations
+    14. Scrollbars
+    15. HighlightJs
+    16. Media Queries
+    17. Animations
  */
 /* ==========================================================================
    Theme colors
@@ -7546,7 +7548,39 @@ h1.post-title {
   height: 5px; }
 
 /* ==========================================================================
-   14. Media Queries - Smaller than 900px
+   14. Thin Scrollbar - Display thin scrollbars
+   ========================================================================== */
+/* Thin Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #333;
+  border: thin solid #111;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border: thin solid #222;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7d7d7d; }
+
+/* ==========================================================================
+  15.  HighlightJs
+       Custom styles for HighlightJs
+   ========================================================================== */
+.hljs {
+  white-space: pre;
+  word-wrap: normal; }
+
+/* ==========================================================================
+   16. Media Queries - Smaller than 900px
    ========================================================================== */
 @media only screen and (max-width: 900px) {
   blockquote {
@@ -7738,7 +7772,7 @@ h1.post-title {
    below this point, or it will probably fuck everything up.
    ========================================================================== */
 /* ==========================================================================
-  15.  Animations
+  17.  Animations
        Add subtle load-in animation for content on the home page
    ========================================================================== */
 .blog-logo img {
