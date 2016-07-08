@@ -1,6 +1,8 @@
 Bastard Theme for Ghost
 ==================
 
+![Ghost version](https://img.shields.io/badge/Ghost-0.8.x-brightgreen.svg?style=flat-square)
+![Node version](https://img.shields.io/badge/Node-%5Ev4.2-brightgreen.svg)
 
 A free boilerplate responsive theme for [Ghost](https://ghost.org) blogging platform.
 
