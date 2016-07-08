@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bastard by karloespiritu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Bastard</h1>
+      <h2 class="project-tagline">A Free Boilerplate Responsive Theme for Ghost blogging platform. Built with Bootstrap, SASS, Font Awesome, Bower, HighlightJs, and Gulp</h2>
+      <a href="https://github.com/karloespiritu/Bastard" class="btn">View on GitHub</a>
+      <a href="https://github.com/karloespiritu/Bastard/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/karloespiritu/Bastard/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="bastard-theme-for-ghost" class="anchor" href="#bastard-theme-for-ghost" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bastard Theme for Ghost</h1>
+
+<p><img src="https://img.shields.io/badge/Ghost-0.8.x-brightgreen.svg?style=flat-square" alt="Ghost version">
+<img src="https://img.shields.io/badge/Node-%5Ev4.2-brightgreen.svg" alt="Node version"></p>
+
+<p>A free boilerplate responsive theme for <a href="https://ghost.org">Ghost</a> blogging platform.</p>
+
+<p>Bastard theme was built using <a href="http://getbootstrap.com/">Bootstrap 3</a>, <a href="http://sass-lang.com">SASS</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, <a href="http://bower.io/">Bower</a>, and <a href="http://gulpjs.com/">Gulp</a>. Gulp is used to automate tasks for compiling and minifying the theme components and Bower to manage package dependencies. You can use the theme as is, or customize it by editing the <code>bastard.js</code> and <code>/assets/sass/*.scss</code> files.</p>
+
+<p><img src="http://f.cl.ly/items/3f2X3p2K2A1E1z263k2K/bastard-sample2.png" alt="Bastard"></p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>I'm using this theme for my personal site, <a href="http://karloespiritu.com">karloespiritu.com</a></p>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
+
+<p>You can download the theme here: <a href="http://karloespiritu.github.io/Bastard">http://karloespiritu.github.io/Bastard</a></p>
+
+<h2>
+<a id="theme-features" class="anchor" href="#theme-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Theme Features</h2>
+
+<ul>
+<li>Clean and well-documented code</li>
+<li>Developed using Bootstrap 3.3, SASS, Font Awesome, Gulp, and Bower</li>
+<li>Organized CSS3 stylesheets using <a href="http://sass-lang.com">SASS</a>
+</li>
+<li>Fully responsive layout</li>
+<li>Full bleed cover images for posts</li>
+<li>Retina display ready, looks great on any device or resolution</li>
+<li>Full screen cover page with parallax effect</li>
+<li>Syntax highlighting using <a href="http://highlightjs.org">HighlightJs</a>
+</li>
+<li>One file css/js for performance optimization</li>
+<li>Automatic linting, compiling, and minification of SCSS and JS files using Gulp</li>
+<li>Automatic image file size optimization using IMGMin and SVGMin</li>
+<li>Easily update theme dependencies using Bower package manager</li>
+<li>Google Analytics integrated</li>
+<li>Includes FitVids.Js for fluid video embeds</li>
+<li>It's free:)</li>
+</ul>
+
+<h2>
+<a id="using-bastard-theme" class="anchor" href="#using-bastard-theme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using Bastard Theme</h2>
+
+<ol>
+<li>Copy the theme folder inside <code>/content/themes</code> of Ghost.</li>
+<li>Restart Ghost and then go to Ghost's Settings (<a href="http://your.domain.com/ghost/settings/general/">http://your.domain.com/ghost/settings/general/</a>). Choose "Bastard" from the theme dropdown menu and save your changes.</li>
+<li>Optionally, you can update the background cover with your own image to replace the default cover image.</li>
+<li>Have fun :)</li>
+</ol>
+
+<h2>
+<a id="customising-bastard-theme" class="anchor" href="#customising-bastard-theme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Customising Bastard Theme</h2>
+
+<p>Bastard theme uses Gulp to lint, compile, and concatenate the javascript and <a href="http://sass-lang.com/">SASS</a> components. Customize the theme by editing the <code>assets/js/bastard.js</code> and <code>sass/*</code> files. Run <code>gulp</code> to compile your changes or use the <code>gulp watch</code> while you build your own theme.</p>
+
+<ol>
+<li>Make sure you have <a href="http://nodejs.org">Node.js</a>, <a href="http://bower.io">Bower</a> and <a href="gulpjs.com">Gulp</a> installed on your system.</li>
+<li>Copy theme folder to Ghost themes directory <code>/content/themes</code>. Open your terminal and make the theme's folder your current working directory.</li>
+<li>Run <code>bower install</code> to install package dependencies.</li>
+<li>Run <code>npm install</code> to install Gulp components.</li>
+<li>Restart Ghost and switch the theme to use <code>Bastard</code> in the Ghost's Settings.</li>
+<li>Make your changes by updating <code>/sass/*</code>, <code>/assets/*</code>, and <code>*.hbs</code> files of the theme.</li>
+<li>Run <code>gulp watch</code> to start watching for file changes or run <code>gulp</code> to build your latest changes.</li>
+<li>If you have new images for the theme, just place them inside <code>image_sources</code> folder and Gulp will handle the optimisation automatically and store the optimised version inside <code>assets/images/</code>.</li>
+<li>Update the social media icon links by updating <code>partials/social.hbs</code>.</li>
+<li>Update gravatar by updating URL in <code>partials/gravatar.hbs</code>.</li>
+</ol>
+
+<h2>
+<a id="resources--dependencies" class="anchor" href="#resources--dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources &amp; Dependencies</h2>
+
+<ul>
+<li><a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass</a></li>
+<li><a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a></li>
+<li><a href="http://gulpjs.com">Gulp: The Streaming Build System</a></li>
+<li><a href="http://bower.io">Bower: A package manager for the web</a></li>
+<li><a href="http://sass-lang.com/">Sass - Syntactically Awesome Stylesheets</a></li>
+<li><a href="http://highlightjs.org">HighlightJs - Syntax highlighting for the Web</a></li>
+<li><a href="http://fitvidsjs.com/">FitVids.Js - A lightweight, easy-to-use jQuery plugin for fluid width video embeds</a></li>
+</ul>
+
+<h2>
+<a id="to-get-in-touch" class="anchor" href="#to-get-in-touch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To Get in Touch</h2>
+
+<p>To get in touch, you can drop me an <a href="mailto:karloespiritu.com">email</a> or find me on <a href="http://twitter.com/karloespiritu">Twitter</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT License</p>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
+
+<p><strong>Karlo Espiritu</strong></p>
+
+<ul>
+<li><a href="mailto:karloespiritu@gmail.com">karloespiritu@gmail.com</a></li>
+<li><a href="https://twitter.com/karloespiritu">http://twitter.com/karloespiritu</a></li>
+<li><a href="https://github.com/karloespiritu">http://github.com/karloespiritu</a></li>
+<li><a href="http://karloespiritu.com">http://karloespiritu.com</a></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/karloespiritu/Bastard">Bastard</a> is maintained by <a href="https://github.com/karloespiritu">karloespiritu</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
