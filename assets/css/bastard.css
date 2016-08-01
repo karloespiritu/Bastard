@@ -7734,7 +7734,7 @@ h1.post-title {
   .post-footer .author {
     margin: 0 0 2rem 0;
     padding: 0 0 1.6rem 0;
-    border-bottom: #666666 1px solid; }
+    border-bottom: rgba(235, 242, 246, 0.29) 1px solid; }
   .post-footer .share {
     position: static;
     width: auto; }
