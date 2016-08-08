@@ -49,9 +49,11 @@ var files = {
     svgs:  ['image_sources/{,*/}*.svg',
             'image_sources/{,*/}*.svg'],
     clean: ['assets/css/compiled_sass.css',
-            'assets/css/bastard.min.css',
+            'assets/css/bastard.css',
+            'assets/css/bastard-min.css',
             'assets/js/scripts.js',
-            'assets/js/scripts.min.js'
+            'assets/js/scripts-min.js',
+            'assets/js/concat_scripts.js'
           ]
 };
 
@@ -73,13 +75,12 @@ gulp.task('compile_sass', function() {
 });
 
 // Concatenate & minify css files
-gulp.task('concat_css', function() {
+gulp.task('concat_minify_css', function() {
     return gulp.src(files.css)
         .pipe(concat('bastard.css'))
-        .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/css'))
         .pipe(minifycss({keepSpecialComments: 0}))
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename('bastard-min.css'))
         .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/css'));
 });
@@ -87,21 +88,26 @@ gulp.task('concat_css', function() {
 gulp.task('css', function() {
     runsequence(
         'compile_sass',
-        'concat_css');
+        'concat_minify_css');
 });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     return gulp.src(files.js)
         .pipe(concat('scripts.js'))
-        .pipe(header(banner, { pkg : pkg }))
-        .pipe(gulp.dest('assets/js'))
-        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
+        .pipe(rename('scripts-min.js'))
         .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/js'));
 });
 
+gulp.task('concat_scripts', function() {
+    return gulp.src(files.js)
+        .pipe(concat('concat_scripts.js'))
+        .pipe(gulp.dest('assets/js'))
+        .pipe(header(banner, { pkg : pkg }))
+        .pipe(gulp.dest('assets/js'));
+});
 
 // Images
 gulp.task('imgmin', function() {
@@ -117,6 +123,11 @@ gulp.task('svgmin', function() {
         .pipe(gulp.dest('assets/images'));
 });
 
+// Build
+gulp.task('build', function() {
+    gulp.start(['compile_sass','concat_scripts']);
+});
+
 // Watch Files For Changes
 gulp.task('watch', ['default'], function() {
     gulp.watch(files.lint, ['scripts']);
@@ -125,7 +136,10 @@ gulp.task('watch', ['default'], function() {
 
 // Clean
 gulp.task('clean', function() {
-    return del(src.clean);
+    files.clean.map(function (x) {
+        console.log("Deleting "+ x);
+      });
+    return del(files.clean);
 });
 
 // Default Task
