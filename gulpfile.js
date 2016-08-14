@@ -39,22 +39,23 @@ var files = {
           ],
     js:   ['assets/bower_components/bootstrap/dist/js/bootstrap.js',
            'assets/bower_components/highlightjs/highlight.pack.js',
-           'assets/js/jquery.fitvids.js',
-           'assets/js/jquery.parallax-1.1.3.js',
-           'assets/js/jquery.easing.1.3.js',
+           'assets/vendor/js/jquery.fitvids.js',
+           'assets/vendor/js/jquery.parallax-1.1.3.js',
+           'assets/vendor/js/jquery.easing.1.3.js',
            'assets/js/bastard.js'
            ],
     images:['image_sources/{,*/}*.jpg',
-            'image_sources/{,*/}*.png'],
+            'image_sources/{,*/}*.png'
+           ],
     svgs:  ['image_sources/{,*/}*.svg',
-            'image_sources/{,*/}*.svg'],
+           ],
     clean: ['assets/css/compiled_sass.css',
             'assets/css/bastard.css',
-            'assets/css/bastard-min.css',
+            'assets/css/bastard.min.css',
             'assets/js/scripts.js',
-            'assets/js/scripts-min.js',
+            'assets/js/scripts.min.js',
             'assets/js/concat_scripts.js'
-          ]
+           ]
 };
 
 // Lint Task
@@ -65,7 +66,7 @@ gulp.task('lint', function() {
 });
 
 // Compile Our Sass
-gulp.task('compile_sass', function() {
+gulp.task('compileSass', function() {
     return gulp.src(files.sass)
         .pipe(sass({style: 'expanded', quiet: true, cacheLocation: '.sass-cache'}))
         .pipe(sass())
@@ -75,33 +76,37 @@ gulp.task('compile_sass', function() {
 });
 
 // Concatenate & minify css files
-gulp.task('concat_minify_css', function() {
+gulp.task('concatMinifyCss', function() {
     return gulp.src(files.css)
         .pipe(concat('bastard.css'))
         .pipe(gulp.dest('assets/css'))
         .pipe(minifycss({keepSpecialComments: 0}))
-        .pipe(rename('bastard-min.css'))
+        .pipe(rename({
+          suffix: '.min'
+        }))
         .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('css', function() {
     runsequence(
-        'compile_sass',
-        'concat_minify_css');
+        'compileSass',
+        'concatMinifyCss');
 });
 
 // Concatenate & Minify JS
-gulp.task('scripts', function() {
+gulp.task('js', function() {
     return gulp.src(files.js)
         .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(rename('scripts-min.js'))
+        .pipe(rename({
+          suffix: '.min'
+        }))
         .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('concat_scripts', function() {
+gulp.task('concatJs', function() {
     return gulp.src(files.js)
         .pipe(concat('concat_scripts.js'))
         .pipe(gulp.dest('assets/js'))
@@ -112,7 +117,11 @@ gulp.task('concat_scripts', function() {
 // Images
 gulp.task('imgmin', function() {
     return gulp.src(files.images)
-        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+        .pipe(cache(imagemin({
+          optimizationLevel: 3,
+          progressive: true,
+          interlaced: true
+        })))
         .pipe(gulp.dest('assets/images'));
 });
 
@@ -125,12 +134,12 @@ gulp.task('svgmin', function() {
 
 // Build
 gulp.task('build', function() {
-    gulp.start(['compile_sass','concat_scripts']);
+    gulp.start(['compileSass','concatJs']);
 });
 
 // Watch Files For Changes
 gulp.task('watch', ['default'], function() {
-    gulp.watch(files.lint, ['scripts']);
+    gulp.watch(files.lint, ['js']);
     gulp.watch(files.sass, ['css']);
 });
 
@@ -144,5 +153,5 @@ gulp.task('clean', function() {
 
 // Default Task
 gulp.task('default', function() {
-    gulp.start('lint', 'css', 'scripts', 'imgmin', 'svgmin');
+    gulp.start('lint', 'css', 'js', 'imgmin', 'svgmin');
 });
