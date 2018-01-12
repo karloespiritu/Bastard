@@ -1,23 +1,23 @@
 // Include gulp
-var gulp = require('gulp')
+const gulp = require('gulp')
 
 // Plugins
-var sass = require('gulp-sass')
-var autoprefixer = require('gulp-autoprefixer')
-var cleanCSS = require('gulp-clean-css')
-var jshint = require('gulp-jshint')
-var uglify = require('gulp-uglify')
-var imagemin = require('gulp-imagemin')
-var svgmin = require('gulp-svgmin')
-var header = require('gulp-header')
-var rename = require('gulp-rename')
-var concat = require('gulp-concat')
-var cache = require('gulp-cache')
-var runsequence = require('run-sequence')
-var del = require('del')
+const sass = require('gulp-sass')
+const autoprefixer = require('gulp-autoprefixer')
+const cleanCSS = require('gulp-clean-css')
+const jshint = require('gulp-jshint')
+const uglify = require('gulp-uglify')
+const imagemin = require('gulp-imagemin')
+const svgmin = require('gulp-svgmin')
+const header = require('gulp-header')
+const rename = require('gulp-rename')
+const concat = require('gulp-concat')
+const cache = require('gulp-cache')
+const runsequence = require('run-sequence')
+const del = require('del')
 
-var pkg = require('./package.json')
-var banner = [
+const pkg = require('./package.json')
+const banner = [
   '/**',
   ' * <%= pkg.name %> - <%= pkg.description %>',
   ' * @version v<%= pkg.version %>',
@@ -28,7 +28,7 @@ var banner = [
   '\n'
 ].join('\n')
 
-var files = {
+const files = {
   lint: [ 'gulpfile.js', 'package.json', 'assets/js/bastard.js' ],
   sass: [ 'assets/sass/**/*.scss' ],
   css: [
