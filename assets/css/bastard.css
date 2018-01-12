@@ -1204,7 +1204,6 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -2446,7 +2445,6 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 
 .form-control:focus {
@@ -2928,8 +2926,7 @@ select[multiple].input-lg,
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
@@ -3287,7 +3284,6 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
 
 .fade.in {
@@ -3309,11 +3305,8 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition-property: height, visibility;
   transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
   transition-timing-function: ease; }
 
 .caret {
@@ -4657,7 +4650,6 @@ a.badge:hover, a.badge:focus {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out; }
 
 .thumbnail > img,
@@ -4782,12 +4774,10 @@ a.thumbnail.active {
   text-align: center;
   background-color: #337ab7;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease; }
 
 .progress-striped .progress-bar,
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px; }
 
@@ -4800,28 +4790,24 @@ a.thumbnail.active {
   background-color: #5cb85c; }
 
 .progress-striped .progress-bar-success {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-info {
   background-color: #5bc0de; }
 
 .progress-striped .progress-bar-info {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-warning {
   background-color: #f0ad4e; }
 
 .progress-striped .progress-bar-warning {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
   background-color: #d9534f; }
 
 .progress-striped .progress-bar-danger {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .media {
@@ -5491,8 +5477,9 @@ button.close {
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out; }
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
 
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5852,7 +5839,6 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left; }
 
 .carousel-inner > .item > img,
@@ -5864,8 +5850,9 @@ button.close {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
@@ -5928,7 +5915,6 @@ button.close {
   background-color: transparent; }
 
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
@@ -5936,7 +5922,6 @@ button.close {
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
@@ -6399,8 +6384,7 @@ h6 {
 
 a {
   color: #ffeb99;
-  -webkit-transition: color ease 0.3s;
-          transition: color ease 0.3s; }
+  transition: color ease 0.3s; }
 
 a:hover {
   color: #caad00; }
@@ -6484,7 +6468,6 @@ code, tt {
   background: #222;
   border-radius: 5px;
   -webkit-font-feature-settings: "liga" 0;
-  -moz-font-feature-settings: "liga" 0;
   font-feature-settings: "liga" 0; }
 
 pre {
@@ -6643,8 +6626,9 @@ margin on the iframe, cause it breaks stuff. */
 .site-wrapper {
   position: relative;
   min-height: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease; }
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
 
 /* ==========================================================================
    4. Navigation - styles for the navigation bar
@@ -6665,7 +6649,6 @@ navbar {
   color: #fff; }
 
 .navbar-custom .nav li a {
-  -webkit-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out; }
 
 .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
@@ -6691,7 +6674,6 @@ navbar {
   border-radius: 60px;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: background .4s ease-in-out;
   transition: background .4s ease-in-out; }
 
 .btn-circle:hover, .btn-circle:focus {
@@ -6746,7 +6728,6 @@ navbar {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.7));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.7)); }
 
 /* Bigass cover image on the home page */
@@ -6807,7 +6788,6 @@ navbar {
   padding-bottom: 4rem;
   word-break: break-word;
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
 
@@ -6843,10 +6823,10 @@ navbar {
   margin: 0 0 5px 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  color: #9EABB3; }
+  color: #9eabb3; }
 
 .post-meta a {
-  color: #9EABB3;
+  color: #9eabb3;
   text-decoration: none; }
 
 .post-meta a:hover {
@@ -6920,7 +6900,6 @@ navbar {
   right: 0;
   height: 70px;
   border: none;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%); }
 
 .no-cover .main-nav.overlay {
@@ -6933,8 +6912,8 @@ navbar {
 /* Hide when there's no cover image or on page2+ */
 .no-cover .scroll-down,
 .no-cover.main-header:after,
-.archive-template .scroll-down,
-.archive-template .main-header:after {
+.paged .scroll-down,
+.paged .main-header:after {
   display: none; }
 
 .no-cover.main-header {
@@ -7093,23 +7072,15 @@ h1.post-title {
    ========================================================================== */
 .read-next {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
   margin-top: 10rem; }
 
 .read-next-story {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   min-width: 50%;
   text-decoration: none;
@@ -7125,14 +7096,12 @@ h1.post-title {
 
 .read-next-story:hover:before {
   background: rgba(0, 0, 0, 0.8);
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  transition: all 0.2s ease; }
 
 .read-next-story:hover .post:before {
   color: #222;
   background: #bbbbbb;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  transition: all 0.2s ease; }
 
 .read-next-story:before {
   content: "";
@@ -7143,8 +7112,7 @@ h1.post-title {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease; }
 
 .read-next-story .post {
   padding-top: 6rem;
@@ -7159,8 +7127,7 @@ h1.post-title {
   color: #bbbbbb;
   border: #666666 1px solid;
   border-radius: 30px;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease; }
 
 .read-next-story.prev .post:before {
   content: "Previous"; }
@@ -7209,14 +7176,17 @@ h1.post-title {
 /* ==========================================================================
    8. Tag archive
    ========================================================================== */
-.archive-template .site-head, .tag-template .site-head {
+.paged .site-head,
+.tag-template .site-head {
   height: auto;
   padding-bottom: 5rem; }
 
-.archive-template .site-head a, .tag-template .site-head a {
+.paged .site-head a,
+.tag-template .site-head a {
   color: #999999; }
 
-.archive-template .blog-logo, .tag-template .blog-logo {
+.paged .blog-logo,
+.tag-template .blog-logo {
   display: block;
   margin-top: 5rem; }
 
@@ -7238,7 +7208,7 @@ h1.post-title {
   background: url(../images/tag-divider.svg) no-repeat top center;
   background-size: 700px 20px; }
 
-.archive-template .blog-title {
+.paged .blog-title {
   display: inline-block;
   padding: 2.5rem 0; }
 
@@ -7277,8 +7247,7 @@ h1.post-title {
 
 .pagination a {
   color: #9EABB3;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  transition: all 0.2s ease; }
 
 /* Push the previous/next links out to the left/right */
 .older-posts, .newer-posts {
@@ -7288,8 +7257,7 @@ h1.post-title {
   border: #999999 1px solid;
   text-decoration: none;
   border-radius: 30px;
-  -webkit-transition: border ease 0.3s;
-          transition: border ease 0.3s; }
+  transition: border ease 0.3s; }
 
 .older-posts:hover, .older-posts:focus, .older-posts:active, .older-posts.active, .newer-posts:hover, .newer-posts:focus, .newer-posts:active, .newer-posts.active {
   color: #000;
@@ -7356,8 +7324,7 @@ h1.post-title {
   line-height: 2.4rem;
   border-radius: 50px;
   background: #000000;
-  -webkit-transition: box-shadow 0.5s;
-          transition: box-shadow 0.5s; }
+  transition: box-shadow 0.5s; }
 
 .subscribe:before {
   color: #666666;
@@ -7366,13 +7333,11 @@ h1.post-title {
   top: 9px;
   left: 9px;
   font-weight: bold;
-  -webkit-transition: color 0.5s ease;
-          transition: color 0.5s ease; }
+  transition: color 0.5s ease; }
 
 .subscribe:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px;
-  -webkit-transition: box-shadow 0.25s;
-          transition: box-shadow 0.25s; }
+  transition: box-shadow 0.25s; }
 
 .subscribe:hover:before {
   color: #50585D; }
@@ -7394,8 +7359,7 @@ h1.post-title {
   background: #666666;
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  -webkit-transition: opacity 0.3s ease, top 0.3s ease;
-          transition: opacity 0.3s ease, top 0.3s ease; }
+  transition: opacity 0.3s ease, top 0.3s ease; }
 
 .tooltip:after {
   content: "";
@@ -7425,8 +7389,7 @@ h1.post-title {
   font-size: 24px;
   color: #bbbbbb;
   background: 0 0;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out; }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   border: solid 1px #bbbbbb;
@@ -7476,7 +7439,6 @@ h1.post-title {
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
 
 #slidemenu-wrapper a {
@@ -7526,7 +7488,6 @@ h1.post-title {
 #slidemenu-wrapper.active {
   left: 250px;
   width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
 
 .slidemenu-divider {
@@ -7620,8 +7581,6 @@ h1.post-title {
   .read-next {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 4rem; }
   .read-next p {

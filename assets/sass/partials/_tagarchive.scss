@@ -2,7 +2,8 @@
    8. Tag archive
    ========================================================================== */
 
-.archive-template, .tag-template {
+.paged,
+.tag-template {
   .site-head {
     height: auto;
     padding-bottom: 5rem;
@@ -35,7 +36,7 @@
   }
 }
 
-.archive-template .blog-title {
+.paged .blog-title {
   display: inline-block;
   padding: 2.5rem 0;
 }
