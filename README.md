@@ -31,7 +31,6 @@ You can download the theme here: [http://karloespiritu.github.io/Bastard](http:/
 * One file css/js for performance optimization
 * Automatic linting, compiling, and minification of SCSS and JS files using Gulp
 * Automatic image file size optimization using IMGMin and SVGMin
-* Easily update theme dependencies using Bower package manager
 * Google Analytics integrated
 * Includes FitVids.Js for fluid video embeds
 * It's free:)
