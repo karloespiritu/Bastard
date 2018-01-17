@@ -6793,7 +6793,7 @@ navbar {
 
 .post:after {
   position: absolute;
-  bottom-margin: 10px;
+  margin-bottom: 10px;
   display: block;
   width: 100%;
   height: 70px;
